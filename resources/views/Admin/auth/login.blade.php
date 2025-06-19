@@ -60,13 +60,13 @@
   <div class="container container-tight py-4">
     <div class="text-center mb-4">
       <a href="." class="navbar-brand navbar-brand-autodark">
-        <img src="./static/logo.svg" width="110" height="32" alt="DigiMart" class="navbar-brand-image">
+        <img src="{{ asset('assets/dist/img/logo.png') }}" style="width: 200px; height: 90px ; object-fit: cover"  alt="Tabler" class="navbar-brand-image">
       </a>
     </div>
     <div class="card card-md">
       <div class="card-body">
         <h2 class="h2 text-center mb-4">Login to Admin account</h2>
-        <form action="{{ route('admin.login') }}" method="POST" autocomplete="off" novalidate>
+        <form action="{{ route('admin.login') }}" method="POST" >
             @csrf
             <div class="mb-3">
             <label class="form-label">Email address</label>
