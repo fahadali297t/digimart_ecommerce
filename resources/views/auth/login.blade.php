@@ -55,9 +55,9 @@
   <div class="page page-center">
   <div class="container container-tight py-4">
     <div class="text-center mb-4">
-      <a href="." class="navbar-brand navbar-brand-autodark">
-        <img src="{{ asset('assets/dist/img/logo.png') }}" style="width: 200px; height: 90px ; object-fit: cover"  alt="Tabler" class="navbar-brand-image">
-      </a>
+      <a href="." class="navbar-brand   navbar-brand-autodark">
+        DigiMart
+    </a>
     </div>
     <div class="card card-md">
       <div class="card-body">
@@ -76,7 +76,9 @@
           <div class="mb-2">
             <label class="form-label">
               Password
-              
+              <span class="form-label-description">
+                <a href="{{ route('password.request') }}">I forgot password</a>
+              </span>
             </label>
             <div class="input-group input-group-flat">
               <input type="password" class="form-control" name="password"  placeholder="Your password"  autocomplete="off">

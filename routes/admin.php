@@ -20,11 +20,11 @@ Route::middleware('guest:admin')
 
 Route::middleware('auth:admin')
     ->prefix('admin')->as('admin.')->group(function () {
-      
+
         Route::get('/dashboard', function () {
-            return view('dashboard');
+            return view('Admin.dashboard');
         })->name('dashboard');
-      
+
         Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
             ->name('logout');
     });

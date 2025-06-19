@@ -56,9 +56,9 @@
 <div class="page page-center">
     <div class="container container-tight py-4">
       <div class="text-center mb-4">
-        <a href="." class="navbar-brand navbar-brand-autodark">
-          <img src="{{ asset('assets/dist/img/logo.png') }}" style="width: 200px; height: 90px ; object-fit: cover"  alt="Tabler" class="navbar-brand-image">
-        </a>
+        <a href="." class="navbar-brand   navbar-brand-autodark">
+          DigiMart
+      </a>
       </div>
       <form class="card card-md" action="{{ route('register') }}" method="POST" >
         @csrf
