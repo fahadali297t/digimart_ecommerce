@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Admin\Auth\RegisteredUserController;
+use App\Http\Controllers\Admin\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest:admin')
@@ -25,6 +26,12 @@ Route::middleware('auth:admin')
             return view('Admin.dashboard');
         })->name('dashboard');
 
+        // routes for categories
+        Route::get('/categories', [CategoryController::class, 'list'])->name('category.list');
+        Route::get('/categories/new', [CategoryController::class, 'add'])->name('category.add');
+        Route::post('/categories/new', [CategoryController::class, 'create']);
+
+        // logout for admin
         Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
             ->name('logout');
     });

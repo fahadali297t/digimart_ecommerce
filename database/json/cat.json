@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Men",
+        "image": "https://example.com/images/categories/men.jpg"
+    },
+    {
+        "name": "Women",
+        "image": "https://example.com/images/categories/women.jpg"
+    },
+    {
+        "name": "Kids",
+        "image": "https://example.com/images/categories/kids.jpg"
+    },
+    {
+        "name": "Accessories",
+        "image": "https://example.com/images/categories/accessories.jpg"
+    },
+    {
+        "name": "Footwear",
+        "image": "https://example.com/images/categories/footwear.jpg"
+    },
+    {
+        "name": "Activewear",
+        "image": "https://example.com/images/categories/activewear.jpg"
+    },
+    {
+        "name": "Loungewear",
+        "image": "https://example.com/images/categories/loungewear.jpg"
+    },
+    {
+        "name": "New Arrivals",
+        "image": "https://example.com/images/categories/new-arrivals.jpg"
+    },
+    {
+        "name": "Sale",
+        "image": "https://example.com/images/categories/sale.jpg"
+    },
+    {
+        "name": "Essentials",
+        "image": "https://example.com/images/categories/essentials.jpg"
+    },
+    {
+        "name": "Plus Size",
+        "image": "https://example.com/images/categories/plus-size.jpg"
+    },
+    {
+        "name": "Formalwear",
+        "image": "https://example.com/images/categories/formalwear.jpg"
+    },
+    {
+        "name": "Casualwear",
+        "image": "https://example.com/images/categories/casualwear.jpg"
+    },
+    {
+        "name": "Outerwear",
+        "image": "https://example.com/images/categories/outerwear.jpg"
+    },
+    {
+        "name": "Swimwear",
+        "image": "https://example.com/images/categories/swimwear.jpg"
+    },
+    {
+        "name": "Maternity",
+        "image": "https://example.com/images/categories/maternity.jpg"
+    },
+    {
+        "name": "Sustainable",
+        "image": "https://example.com/images/categories/sustainable.jpg"
+    },
+    {
+        "name": "Gift Ideas",
+        "image": "https://example.com/images/categories/gift-ideas.jpg"
+    }
+]

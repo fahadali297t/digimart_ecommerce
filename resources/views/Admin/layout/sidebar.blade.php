@@ -152,6 +152,32 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
               <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-category"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4h6v6h-6z" /><path d="M14 4h6v6h-6z" /><path d="M4 14h6v6h-6z" /><path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /></svg>
+              </span>
+              <span class="nav-link-title">
+                Categories
+              </span>
+            </a>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu-columns">
+                <div class="dropdown-menu-column">
+                  <a class="dropdown-item" href="{{ route('admin.category.list') }}">
+                    All Categories
+                  </a>
+                  <a class="dropdown-item" href="{{ route('admin.category.list') }}">
+                    Sub Categories
+                  </a>
+                  <a class="dropdown-item" href="{{ route('admin.category.add') }}">
+                    Add New Category
+                  </a>
+
+              </div>
+            </div>
+          </li>
+          {{-- Dummy sidebar link --}}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
+              <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" /><path d="M12 12l8 -4.5" /><path d="M12 12l0 9" /><path d="M12 12l-8 -4.5" /><path d="M16 5.25l-8 4.5" /></svg>
               </span>
               <span class="nav-link-title">
@@ -273,17 +299,19 @@
           <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
             <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
             <div class="d-none d-xl-block ps-2">
-              <div>Paweł Kuna</div>
-              <div class="mt-1 small text-secondary">UI Designer</div>
+              <div>{{ Auth::user()->name }}</div>
+              <div class="mt-1 small text-secondary">Admin</div>
             </div>
           </a>
           <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-            <a href="#" class="dropdown-item">Status</a>
             <a href="./profile.html" class="dropdown-item">Profile</a>
-            <a href="#" class="dropdown-item">Feedback</a>
             <div class="dropdown-divider"></div>
-            <a href="./settings.html" class="dropdown-item">Settings</a>
-            <a href="./sign-in.html" class="dropdown-item">Logout</a>
+            <form method="POST" action="{{ route('admin.logout') }}">
+              @csrf
+              <a  class="dropdown-item" href="route('admin.logout')" onclick="event.preventDefault();
+                                  this.closest('form').submit();">Logout</a>
+              
+          </form>
           </div>
         </div>
       </div>
