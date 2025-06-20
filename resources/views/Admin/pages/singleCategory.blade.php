@@ -27,12 +27,14 @@
       <div class="page-body">
         <div class="container-xl">
           <div class="row row-deck row-cards">
-
+            <div class="col-12">
+              <img class="category_cover" src="{{ asset('storage/uploads/'.$categs->img) }}" alt="" srcset="">
+            </div>
             <div class="col-12">
               <div class="card">
                 <div class="card-header d-flex justify-content-between align-item-center">
-                  <h3 class="card-title">All Categories</h3>
-                  <a href="{{ route('admin.category.add') }}" class="btn btn-primary">Add New Category</a>
+                  <h3 class="card-title">{{ $categs->name }}</h3>
+                  <a href="{{ route('admin.subcategory.add') }}" class="btn btn-primary">Add Sub Category</a>
                   
                 </div>
                 
@@ -43,8 +45,7 @@
                         <th class="w-1">No. <!-- Download SVG icon from http://tabler-icons.io/i/chevron-up -->
                           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-sm icon-thick" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>
                         </th>
-                        <th>Category Name</th>
-                        <th>Cover Image</th>
+                        <th>Sub Category</th>
                         <th>Total Products</th>
                         <th>Sub Categories</th>
                         <th>Status</th>
@@ -55,13 +56,11 @@
                       @php
                           $i  = 0;
                       @endphp
-                      @forelse ($categs as $cat)
+                      @forelse ($categs->sub_category as $cat)
                       <tr>
                         <td><span class="text-secondary">{{ ++$i}}</span></td>
                         <td><a href="invoice.html" class="text-reset" tabindex="-1">{{ $cat->name }}</a></td>
-                        <td>
-                          <img width="100px" height="100px" style="object-fit: cover" src="{{ asset('storage/uploads/'.$cat->img) }}" alt="img" srcset="">
-                        </td>
+                        
                         <td>
                           20
                         </td>
@@ -76,17 +75,17 @@
                           <span class="dropdown">
                             <button class="btn dropdown-toggle align-text-top" data-bs-boundary="viewport" data-bs-toggle="dropdown">Actions</button>
                             <div class="dropdown-menu dropdown-menu-end">
-                              <a class="dropdown-item" href="{{ route('admin.category.view' , $cat->id) }}">
+                            <a class="dropdown-item" href="{{ route('admin.subcategory.list') }}">
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-eye"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" /></svg>
                                 &nbsp;
                                 View All Sub Categories
                               </a>
-                              <a class="dropdown-item" href="{{ route('admin.category.edit' , $cat->id) }}">
+                              <a class="dropdown-item" href="{{ route('admin.subcategory.edit' , $cat->id) }}">
                                 <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
                                 &nbsp;
                                 Edit
                               </a> 
-                              <form action="{{ route('admin.category.delete') }}" method="post">
+                              <form action="{{ route('admin.subcategory.delete') }}" method="post">
                                 @method('DELETE')
                                 @csrf
                                 <input type="hidden" name="id" value="{{ $cat->id }}">
@@ -108,12 +107,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="card-footer d-flex justify-content-between align-items-center">
-                  {{ $categs->links() }}
-                  <span>
-                    Showing {{ $i }} records of {{ $count }}
-                  </span>
-                </div>
+               
               </div>
             </div>
 

@@ -2,3 +2,11 @@
     font-size: 1.5rem;
     color: var(--tblr-brand-color); ;
 }
+
+.category_cover {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+}

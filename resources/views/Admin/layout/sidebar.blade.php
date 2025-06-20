@@ -164,7 +164,7 @@
                   <a class="dropdown-item" href="{{ route('admin.category.list') }}">
                     All Categories
                   </a>
-                  <a class="dropdown-item" href="{{ route('admin.category.list') }}">
+                  <a class="dropdown-item" href="{{ route('admin.subcategory.list') }}">
                     Sub Categories
                   </a>
                   <a class="dropdown-item" href="{{ route('admin.category.add') }}">
