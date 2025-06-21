@@ -58,7 +58,7 @@
                       @forelse ($categs as $cat)
                       <tr>
                         <td><span class="text-secondary">{{ ++$i}}</span></td>
-                        <td><a href="invoice.html" class="text-reset" tabindex="-1">{{ $cat->name }}</a></td>
+                        <td><a href="{{ route('admin.category.view' , $cat->id) }}" class="text-reset" tabindex="-1">{{ $cat->name }}</a></td>
                         <td>
                           <img width="100px" height="100px" style="object-fit: cover" src="{{ asset('storage/uploads/'.$cat->img) }}" alt="img" srcset="">
                         </td>

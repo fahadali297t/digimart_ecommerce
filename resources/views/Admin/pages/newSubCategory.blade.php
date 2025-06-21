@@ -56,6 +56,11 @@
                                 <label for="inputEmail3" class="col-sm-2 col-form-label">Sub Category Name</label>
                                 <div class="col-sm-10">
                                   <input type="text"  class="form-control" id="inputEmail3" name="name" placeholder="Sub Category Name">
+                                  <span class="text-danger d-block mt-2">
+                                    @error('name')
+                                    {{ $message }}
+                                    @enderror
+                                  </span>
                                 </div>
                             </div>
                             

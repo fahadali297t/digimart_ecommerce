@@ -58,7 +58,7 @@
                       @forelse ($categs as $cat)
                       <tr>
                         <td><span class="text-secondary">{{ ++$i}}</span></td>
-                        <td><a href="invoice.html" class="text-reset" tabindex="-1">{{ $cat->name }}</a></td>
+                        <td><p class="text-reset" tabindex="-1">{{ $cat->name }}</p></td>
                        
                         <td>
                           20
