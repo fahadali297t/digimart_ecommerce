@@ -102,7 +102,7 @@
                                         <div class="form-group row mt-5">
                                           <label class=" col-md-12 col-form-label">Product Price in PKR<span class="text-danger">*</span></label>
                                             <div class="col-md-12">
-                                                <input type="number" class="form-control" name="name" placeholder="Product Name">
+                                                <input type="number" class="form-control" name="name" placeholder="Product Price">
                                               <span class="text-danger d-block mt-2">
                                                   @error('category_id') {{ $message }} @enderror
                                               </span>
@@ -115,7 +115,7 @@
                                         <div class="form-group row mt-5">
                                           <label class=" col-md-12 col-form-label">Product Quantity<span class="text-danger">*</span></label>
                                             <div class="col-md-12">
-                                                <input type="number" class="form-control" name="name" placeholder="Product Name">
+                                                <input type="number" class="form-control" name="name" placeholder="Product Quantity">
                                               <span class="text-danger d-block mt-2">
                                                   @error('category_id') {{ $message }} @enderror
                                               </span>
