@@ -23,7 +23,7 @@
         <!-- Page body -->
         <div class="page-body">
             <div class="container-xl">
-                <form action="{{-- --}}" enctype="multipart/form-data" method="POST">
+                <form action="{{ route('admin.product.add') }}" enctype="multipart/form-data" method="POST">
                     @csrf
                     <div class="row row-deck row-cards">
                         <div class="col-12">
@@ -36,20 +36,20 @@
                                 <div class="card_body p-5">
                                     {{-- Product Title --}}
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Product Title <span class="text-danger">*</span></label>
+                                        <label for="title" class="col-sm-2 col-form-label">Product Title <span class="text-danger">*</span></label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="name" placeholder="Product Name">
+                                            <input type="text" id="title" class="form-control" name="title" placeholder="Product Name">
                                             <span class="text-danger d-block mt-2">
-                                                @error('name') {{ $message }} @enderror
+                                                @error('title') {{ $message }} @enderror
                                             </span>
                                         </div>
                                     </div>
 
                                     {{-- Product Description --}}
                                     <div class="form-group mt-5 row">
-                                        <label class="col-sm-2 col-form-label">Product Description <span class="text-danger">*</span></label>
+                                        <label for="description" class="col-sm-2 col-form-label">Product Description <span class="text-danger">*</span></label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control" name="description" rows="5"></textarea>
+                                            <textarea class="form-control" id="description" name="description" rows="5"></textarea>
                                             <span class="text-danger d-block mt-2">
                                                 @error('description') {{ $message }} @enderror
                                             </span>
@@ -60,9 +60,9 @@
                                       {{-- Select Category --}}
                                     <div class="col-12 col-md-6">
                                       <div class="form-group row mt-5">
-                                        <label class=" col-md-12 col-form-label">Select a Category<span class="text-danger">*</span></label>
+                                        <label for="category" class=" col-md-12 col-form-label">Select a Category<span class="text-danger">*</span></label>
                                           <div class="col-md-12">
-                                            <select class="form-select" name="category_id">
+                                            <select class="form-select" id="category" name="category">
                                                 <option selected value="">Select a category</option>
                                                 @forelse ($catges as $cat)
                                                     <option value="{{ $cat->id }}">{{ $cat->name }}</option>
@@ -70,7 +70,7 @@
                                                 @endforelse
                                             </select>
                                             <span class="text-danger d-block mt-2">
-                                                @error('category_id') {{ $message }} @enderror
+                                                @error('category') {{ $message }} @enderror
                                             </span>
                                           </div>
                                       </div>
@@ -79,9 +79,9 @@
                                         {{-- Select Subcategory --}}
                                         <div class="col-12 col-md-6">
                                           <div class="form-group row mt-5">
-                                            <label class=" col-md-12 col-form-label">Select Sub Category<span class="text-danger">*</span></label>
+                                            <label for="sub_category" class=" col-md-12 col-form-label">Select Sub Category<span class="text-danger">*</span></label>
                                               <div class="col-md-12">
-                                                <select class="form-select" name="category_id">
+                                                <select class="form-select" id="sub_category" name="sub_category">
                                                     <option selected value="">Select category first</option>
                                                     @forelse ($catges as $cat)
                                                         <option value="{{ $cat->id }}">{{ $cat->name }}</option>
@@ -89,7 +89,7 @@
                                                     @endforelse
                                                 </select>
                                                 <span class="text-danger d-block mt-2">
-                                                    @error('category_id') {{ $message }} @enderror
+                                                    @error('sub_category') {{ $message }} @enderror
                                                 </span>
                                               </div>
                                           </div>
@@ -97,14 +97,14 @@
                                   </div>
                                   {{-- price and Quantity --}}
                                   <div class="row">
-                                    {{-- Select Category --}}
+                                    {{-- Product Price --}}
                                     <div class="col-12 col-md-6">
                                         <div class="form-group row mt-5">
-                                          <label class=" col-md-12 col-form-label">Product Price in PKR<span class="text-danger">*</span></label>
+                                          <label for="price" class=" col-md-12 col-form-label">Product Price in PKR<span class="text-danger">*</span></label>
                                             <div class="col-md-12">
-                                                <input type="number" class="form-control" name="name" placeholder="Product Price">
+                                                <input type="number" id="price" class="form-control" name="price" placeholder="Product Price">
                                               <span class="text-danger d-block mt-2">
-                                                  @error('category_id') {{ $message }} @enderror
+                                                  @error('price') {{ $message }} @enderror
                                               </span>
                                             </div>
                                         </div>
@@ -113,11 +113,11 @@
                                       {{-- Product Quantity --}}
                                       <div class="col-12 col-md-6">
                                         <div class="form-group row mt-5">
-                                          <label class=" col-md-12 col-form-label">Product Quantity<span class="text-danger">*</span></label>
+                                          <label for="quantity" class=" col-md-12 col-form-label">Product Quantity<span class="text-danger">*</span></label>
                                             <div class="col-md-12">
-                                                <input type="number" class="form-control" name="name" placeholder="Product Quantity">
+                                                <input type="number" class="form-control" name="quantity" id="quantity" placeholder="Product Quantity">
                                               <span class="text-danger d-block mt-2">
-                                                  @error('category_id') {{ $message }} @enderror
+                                                  @error('quantity') {{ $message }} @enderror
                                               </span>
                                             </div>
                                         </div>
@@ -130,9 +130,18 @@
 
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4"> 
-                                        <div>
+                                        <div >
                                          <label class="form-label imgUpload" for="coverImg" data-default="Cover Image*">
-                                            <i class="fa-solid fa-arrow-up-from-bracket"></i> &nbsp; Cover Image<span class="text-danger">*</span>
+                                            <div class="d-flex flex-column gap-2 justify-content-center align-items-center">
+                                                <div>
+                                                    <i class="fa-solid fa-arrow-up-from-bracket"></i> &nbsp; Cover Image<span class="text-danger">*</span>
+                                                </div>
+                                                <div class="text-danger">
+                                                    @error('cover')
+                                                        {{ $message }}
+                                                    @enderror
+                                                </div>
+                                            </div>
                                         </label>
                                          <input class="form-control image_upload d-none" name="cover" accept="image/*"  type="file" id="coverImg">
                                         </div>
@@ -142,7 +151,7 @@
                                             <label class="form-label imgUpload" data-default="Product Image 1*" for="product_image1">
                                                 <i class="fa-solid fa-arrow-up-from-bracket"></i> &nbsp; Product Image 1<span class="text-danger">*</span>
                                             </label>
-                                         <input class="form-control image_upload d-none" name="cover" accept="image/*"   type="file" id="product_image1">
+                                         <input class="form-control image_upload d-none" name="product_image1" accept="image/*"   type="file" id="product_image1">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4"> 
@@ -150,7 +159,7 @@
                                          <label class="form-label imgUpload" for="product_image2">
                                             <i class="fa-solid fa-arrow-up-from-bracket" data-default="Product Image 2*" ></i> &nbsp; Product Image 2<span class="text-danger">*</span>
                                         </label>
-                                         <input class="form-control d-none image_upload"  name="cover" accept="image/*"   type="file" id="product_image2">
+                                         <input class="form-control d-none image_upload"  name="product_image2" accept="image/*"   type="file" id="product_image2">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4"> 
@@ -158,7 +167,7 @@
                                          <label class="form-label imgUpload" for="product_image3" data-default="Product Image 3*">
                                             <i class="fa-solid fa-arrow-up-from-bracket"></i> &nbsp; Product Image 3<span class="text-danger">*</span>
                                         </label>
-                                         <input class="form-control image_upload d-none" name="cover" accept="image/*"   type="file" id="product_image3">
+                                         <input class="form-control image_upload d-none" name="product_image3" accept="image/*"   type="file" id="product_image3">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4"> 
@@ -166,7 +175,7 @@
                                          <label class="form-label imgUpload" for="product_image4" data-default="Product Image 4">
                                             <i class="fa-solid fa-arrow-up-from-bracket"></i> &nbsp; Product Image 4
                                         </label>
-                                         <input class="form-control image_upload d-none" name="cover" accept="image/*"   type="file" id="product_image4">
+                                         <input class="form-control image_upload d-none" name="product_image4" accept="image/*"   type="file" id="product_image4">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-4"> 
@@ -174,7 +183,7 @@
                                          <label class="form-label imgUpload" data-default="Product Image 5" for="product_image5">
                                             <i class="fa-solid fa-arrow-up-from-bracket"></i> &nbsp; Product Image 5
                                         </label>
-                                         <input class="form-control image_upload d-none" name="cover" accept="image/*"   type="file" id="product_image5">
+                                         <input class="form-control image_upload d-none" name="product_image5" accept="image/*"   type="file" id="product_image5">
                                         </div>
                                     </div>
 

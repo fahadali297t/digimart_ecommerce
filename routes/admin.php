@@ -47,7 +47,8 @@ Route::middleware('auth:admin')
         Route::get('/subCategories', [SubCategoryController::class, 'subCatList'])->name('subcategory.list');
 
 
-        Route::get('/product/new' , [ProductController::class , 'add'])->name('product.add');
+        Route::get('/product/new', [ProductController::class, 'add'])->name('product.add');
+        Route::post('/product/new', [ProductController::class, 'submit_add']);
 
 
         // logout for admin
