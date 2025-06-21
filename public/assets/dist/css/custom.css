@@ -1,6 +1,6 @@
-.navbar-brand{
+.navbar-brand {
     font-size: 1.5rem;
-    color: var(--tblr-brand-color); ;
+    color: var(--tblr-brand-color);
 }
 
 .category_cover {
@@ -8,5 +8,14 @@
     height: 300px;
     object-fit: cover;
     object-position: center;
+}
 
+.imgUpload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    border: 2px dashed #0054a6;
+    border-radius: 10px;
+    cursor: pointer;
 }

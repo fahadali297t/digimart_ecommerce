@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Admin\Auth\RegisteredUserController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\Products\ProductController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,6 +45,9 @@ Route::middleware('auth:admin')
         Route::post('/subCategory/edit', [SubCategoryController::class, 'edit'])->name('subcategory.update');
         Route::delete('/subCategory/delete', [SubCategoryController::class, 'delete'])->name('subcategory.delete');
         Route::get('/subCategories', [SubCategoryController::class, 'subCatList'])->name('subcategory.list');
+
+
+        Route::get('/product/new' , [ProductController::class , 'add'])->name('product.add');
 
 
         // logout for admin

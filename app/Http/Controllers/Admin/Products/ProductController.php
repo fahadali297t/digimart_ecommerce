@@ -16,4 +16,11 @@ class ProductController extends Controller
         $pro = Product::with(['product_image', 'sub_category.category'])->get();
         return $pro;
     }
+
+    public function add()
+    {
+        $categories = Category::all();
+
+        return view('Admin.pages.newProduct', ['catges' => $categories]);
+    }
 }

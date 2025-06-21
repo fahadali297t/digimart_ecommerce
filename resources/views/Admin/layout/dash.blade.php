@@ -31,6 +31,8 @@
     @yield('content')
     <script src="{{ asset('assets/dist/js/tabler.min.js') }}" defer></script>
     <script src="{{ asset('assets/dist/js/demo.min.js') }}" defer></script>
+    <script src="https://kit.fontawesome.com/0e26b3244d.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('assets/dist/js/custom.js ' )}}"></script>
 
   </body>
 </html>

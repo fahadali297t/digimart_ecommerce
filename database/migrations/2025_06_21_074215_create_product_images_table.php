@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('supportImg2');
             $table->string('supportImg3');
             $table->string('supportImg4')->nullable();
+            $table->string('supportImg5')->nullable();
             $table->timestamps();
         });
     }
