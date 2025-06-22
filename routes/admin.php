@@ -48,9 +48,13 @@ Route::middleware('auth:admin')
         Route::delete('/subCategory/delete', [SubCategoryController::class, 'delete'])->name('subcategory.delete');
         Route::get('/subCategories', [SubCategoryController::class, 'subCatList'])->name('subcategory.list');
 
-
+        Route::get('/products', [ProductController::class, 'list'])->name('product.list');
         Route::get('/product/new', [ProductController::class, 'add'])->name('product.add');
         Route::post('/product/new', [ProductController::class, 'submit_add']);
+        Route::get('/product/edit/{slug}', [ProductController::class, 'edit'])->name('product.edit');
+        Route::post('/product/edit', [ProductController::class, 'submit_edit'])->name('product.update');
+        Route::delete('/product/delete', [ProductController::class, 'delete'])->name('product.delete');
+
 
 
         // logout for admin
