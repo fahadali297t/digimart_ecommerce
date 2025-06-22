@@ -23,6 +23,10 @@
       	font-feature-settings: "cv03", "cv04", "cv11";
       }
     </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-3gJwYp8G4PVnYf3UnIFJQGryDxkS7Ms6kM3H2H+zSZo="
+    crossorigin="anonymous"></script>
+
   </head>
   <body >
     <script src="./dist/js/demo-theme.min.js?1692870487"></script>

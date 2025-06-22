@@ -22,8 +22,17 @@ class ProductController extends Controller
     {
         $categories = Category::all();
 
-        return view('Admin.pages.newProduct', ['catges' => $categories]);
+        return view('Admin.pages.product.newProduct', ['catges' => $categories]);
     }
+
+    public function getSubCategories($category_id)
+    {
+        $subCategories = SubCategory::where('category_id', $category_id)->get();
+
+        return response()->json($subCategories);
+    }
+
+
     public function submit_add(Request $request)
     {
 

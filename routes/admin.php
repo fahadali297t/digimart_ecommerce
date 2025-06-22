@@ -40,6 +40,8 @@ Route::middleware('auth:admin')
         Route::get('/categories/{id}', [CategoryController::class, 'view'])->name('category.view');
         Route::get('/subCategory/new', [SubCategoryController::class, 'addSub'])->name('subcategory.add');
         Route::post('/subCategory/new', [SubCategoryController::class, 'createSub']);
+        // for ajax
+        Route::get('/subcategories/{category_id}', [ProductController::class, 'getSubCategories']);
 
         Route::get('/subCategory/edit/{id}', [SubCategoryController::class, 'editForm'])->name('subcategory.edit');
         Route::post('/subCategory/edit', [SubCategoryController::class, 'edit'])->name('subcategory.update');
