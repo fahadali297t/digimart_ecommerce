@@ -10,47 +10,35 @@
         "category_id": 1
     },
     {
+        "name": "Shalwar Kameez",
+        "image": "https://example.com/images/subcategories/shalwar-kameez-men.jpg",
+        "category_id": 1
+    },
+    {
         "name": "Jeans",
         "image": "https://example.com/images/subcategories/jeans.jpg",
         "category_id": 1
     },
     {
-        "name": "Jackets",
-        "image": "https://example.com/images/subcategories/jackets.jpg",
-        "category_id": 1
-    },
-    {
-        "name": "Shorts",
-        "image": "https://example.com/images/subcategories/shorts.jpg",
-        "category_id": 1
-    },
-
-    {
-        "name": "Tops",
-        "image": "https://example.com/images/subcategories/tops.jpg",
+        "name": "Kurtis",
+        "image": "https://example.com/images/subcategories/kurtis.jpg",
         "category_id": 2
     },
     {
-        "name": "Dresses",
-        "image": "https://example.com/images/subcategories/dresses.jpg",
+        "name": "Shalwar Kameez",
+        "image": "https://example.com/images/subcategories/shalwar-kameez-women.jpg",
         "category_id": 2
     },
     {
-        "name": "Skirts",
-        "image": "https://example.com/images/subcategories/skirts.jpg",
+        "name": "Abayas",
+        "image": "https://example.com/images/subcategories/abayas.jpg",
         "category_id": 2
     },
     {
-        "name": "Blouses",
-        "image": "https://example.com/images/subcategories/blouses.jpg",
+        "name": "Unstitched Fabric",
+        "image": "https://example.com/images/subcategories/unstitched.jpg",
         "category_id": 2
     },
-    {
-        "name": "Leggings",
-        "image": "https://example.com/images/subcategories/leggings.jpg",
-        "category_id": 2
-    },
-
     {
         "name": "Boys Clothing",
         "image": "https://example.com/images/subcategories/boys-clothing.jpg",
@@ -67,298 +55,168 @@
         "category_id": 3
     },
     {
-        "name": "School Uniforms",
-        "image": "https://example.com/images/subcategories/school-uniforms.jpg",
+        "name": "Eid Collection",
+        "image": "https://example.com/images/subcategories/eid-collection.jpg",
         "category_id": 3
     },
     {
-        "name": "Kids Accessories",
-        "image": "https://example.com/images/subcategories/kids-accessories.jpg",
-        "category_id": 3
-    },
-
-    {
-        "name": "Belts",
-        "image": "https://example.com/images/subcategories/belts.jpg",
+        "name": "Peshawari Chappal",
+        "image": "https://example.com/images/subcategories/peshawari-chappal.jpg",
         "category_id": 4
-    },
-    {
-        "name": "Bags",
-        "image": "https://example.com/images/subcategories/bags.jpg",
-        "category_id": 4
-    },
-    {
-        "name": "Hats",
-        "image": "https://example.com/images/subcategories/hats.jpg",
-        "category_id": 4
-    },
-    {
-        "name": "Sunglasses",
-        "image": "https://example.com/images/subcategories/sunglasses.jpg",
-        "category_id": 4
-    },
-    {
-        "name": "Jewelry",
-        "image": "https://example.com/images/subcategories/jewelry.jpg",
-        "category_id": 4
-    },
-
-    {
-        "name": "Sneakers",
-        "image": "https://example.com/images/subcategories/sneakers.jpg",
-        "category_id": 5
-    },
-    {
-        "name": "Boots",
-        "image": "https://example.com/images/subcategories/boots.jpg",
-        "category_id": 5
     },
     {
         "name": "Sandals",
         "image": "https://example.com/images/subcategories/sandals.jpg",
+        "category_id": 4
+    },
+    {
+        "name": "Formal Shoes",
+        "image": "https://example.com/images/subcategories/formal-shoes.jpg",
+        "category_id": 4
+    },
+    {
+        "name": "Casual Shoes",
+        "image": "https://example.com/images/subcategories/casual-shoes.jpg",
+        "category_id": 4
+    },
+    {
+        "name": "Bridal Dresses",
+        "image": "https://example.com/images/subcategories/bridal-dresses.jpg",
         "category_id": 5
     },
     {
-        "name": "Heels",
-        "image": "https://example.com/images/subcategories/heels.jpg",
+        "name": "Groom Sherwanis",
+        "image": "https://example.com/images/subcategories/groom-sherwanis.jpg",
         "category_id": 5
     },
     {
-        "name": "Flats",
-        "image": "https://example.com/images/subcategories/flats.jpg",
+        "name": "Mehndi Outfits",
+        "image": "https://example.com/images/subcategories/mehndi-outfits.jpg",
         "category_id": 5
     },
-
     {
-        "name": "Gym Tops",
-        "image": "https://example.com/images/subcategories/gym-tops.jpg",
+        "name": "Walima Dresses",
+        "image": "https://example.com/images/subcategories/walima-dresses.jpg",
+        "category_id": 5
+    },
+    {
+        "name": "Watches",
+        "image": "https://example.com/images/subcategories/watches.jpg",
         "category_id": 6
     },
     {
-        "name": "Gym Leggings",
-        "image": "https://example.com/images/subcategories/gym-leggings.jpg",
+        "name": "Belts",
+        "image": "https://example.com/images/subcategories/belts.jpg",
         "category_id": 6
     },
     {
-        "name": "Tracksuits",
-        "image": "https://example.com/images/subcategories/tracksuits.jpg",
+        "name": "Handbags",
+        "image": "https://example.com/images/subcategories/handbags.jpg",
         "category_id": 6
     },
     {
-        "name": "Sports Bras",
-        "image": "https://example.com/images/subcategories/sports-bras.jpg",
+        "name": "Jewelry",
+        "image": "https://example.com/images/subcategories/jewelry.jpg",
         "category_id": 6
     },
     {
-        "name": "Gym Shorts",
-        "image": "https://example.com/images/subcategories/gym-shorts.jpg",
-        "category_id": 6
-    },
-
-    {
-        "name": "Hoodies",
-        "image": "https://example.com/images/subcategories/hoodies.jpg",
-        "category_id": 7
-    },
-    {
-        "name": "Joggers",
-        "image": "https://example.com/images/subcategories/joggers.jpg",
-        "category_id": 7
-    },
-    {
-        "name": "Sweatpants",
-        "image": "https://example.com/images/subcategories/sweatpants.jpg",
-        "category_id": 7
-    },
-    {
-        "name": "Sweatshirts",
-        "image": "https://example.com/images/subcategories/sweatshirts.jpg",
-        "category_id": 7
-    },
-
-    {
-        "name": "Just In – Men",
+        "name": "Men New Arrivals",
         "image": "https://example.com/images/subcategories/new-men.jpg",
-        "category_id": 8
+        "category_id": 7
     },
     {
-        "name": "Just In – Women",
+        "name": "Women New Arrivals",
         "image": "https://example.com/images/subcategories/new-women.jpg",
-        "category_id": 8
+        "category_id": 7
     },
     {
-        "name": "Just In – Kids",
+        "name": "Kids New Arrivals",
         "image": "https://example.com/images/subcategories/new-kids.jpg",
+        "category_id": 7
+    },
+    {
+        "name": "Latest Footwear",
+        "image": "https://example.com/images/subcategories/latest-footwear.jpg",
+        "category_id": 7
+    },
+    {
+        "name": "Men's Sale",
+        "image": "https://example.com/images/subcategories/mens-sale.jpg",
         "category_id": 8
     },
     {
-        "name": "Trending Now",
-        "image": "https://example.com/images/subcategories/trending.jpg",
+        "name": "Women's Sale",
+        "image": "https://example.com/images/subcategories/womens-sale.jpg",
         "category_id": 8
     },
-
     {
-        "name": "Clearance",
-        "image": "https://example.com/images/subcategories/clearance.jpg",
+        "name": "Kids' Sale",
+        "image": "https://example.com/images/subcategories/kids-sale.jpg",
+        "category_id": 8
+    },
+    {
+        "name": "Footwear Sale",
+        "image": "https://example.com/images/subcategories/footwear-sale.jpg",
+        "category_id": 8
+    },
+    {
+        "name": "Men’s Suits",
+        "image": "https://example.com/images/subcategories/mens-suits.jpg",
         "category_id": 9
     },
     {
-        "name": "Last Chance",
-        "image": "https://example.com/images/subcategories/last-chance.jpg",
+        "name": "Men’s Dress Shirts",
+        "image": "https://example.com/images/subcategories/mens-dress-shirts.jpg",
         "category_id": 9
     },
     {
-        "name": "Under $20",
-        "image": "https://example.com/images/subcategories/under-20.jpg",
+        "name": "Women’s Party Dresses",
+        "image": "https://example.com/images/subcategories/womens-party-dresses.jpg",
         "category_id": 9
     },
     {
-        "name": "Bundle Deals",
-        "image": "https://example.com/images/subcategories/bundles.jpg",
+        "name": "Formal Kurtis",
+        "image": "https://example.com/images/subcategories/formal-kurtis.jpg",
         "category_id": 9
     },
-
-    {
-        "name": "Everyday Basics",
-        "image": "https://example.com/images/subcategories/basics.jpg",
-        "category_id": 10
-    },
-    {
-        "name": "Plain Tees",
-        "image": "https://example.com/images/subcategories/plain-tees.jpg",
-        "category_id": 10
-    },
-    {
-        "name": "Multipacks",
-        "image": "https://example.com/images/subcategories/multipacks.jpg",
-        "category_id": 10
-    },
-    {
-        "name": "Layering Pieces",
-        "image": "https://example.com/images/subcategories/layering.jpg",
-        "category_id": 10
-    },
-
-    {
-        "name": "Plus Size Tops",
-        "image": "https://example.com/images/subcategories/plus-tops.jpg",
-        "category_id": 11
-    },
-    {
-        "name": "Plus Size Bottoms",
-        "image": "https://example.com/images/subcategories/plus-bottoms.jpg",
-        "category_id": 11
-    },
-    {
-        "name": "Plus Size Dresses",
-        "image": "https://example.com/images/subcategories/plus-dresses.jpg",
-        "category_id": 11
-    },
-
-    {
-        "name": "Blazers",
-        "image": "https://example.com/images/subcategories/blazers.jpg",
-        "category_id": 12
-    },
-    {
-        "name": "Dress Shirts",
-        "image": "https://example.com/images/subcategories/dress-shirts.jpg",
-        "category_id": 12
-    },
-    {
-        "name": "Trousers",
-        "image": "https://example.com/images/subcategories/trousers.jpg",
-        "category_id": 12
-    },
-    {
-        "name": "Suits",
-        "image": "https://example.com/images/subcategories/suits.jpg",
-        "category_id": 12
-    },
-
     {
         "name": "Polo Shirts",
-        "image": "https://example.com/images/subcategories/polo.jpg",
-        "category_id": 13
+        "image": "https://example.com/images/subcategories/polo-shirts.jpg",
+        "category_id": 10
     },
     {
-        "name": "Chinos",
-        "image": "https://example.com/images/subcategories/chinos.jpg",
-        "category_id": 13
+        "name": "Casual Trousers",
+        "image": "https://example.com/images/subcategories/casual-trousers.jpg",
+        "category_id": 10
     },
     {
-        "name": "Graphic Tees",
-        "image": "https://example.com/images/subcategories/graphic-tees.jpg",
-        "category_id": 13
+        "name": "Lawn Dresses",
+        "image": "https://example.com/images/subcategories/lawn-dresses.jpg",
+        "category_id": 10
     },
-
+    {
+        "name": "Casual T-Shirts",
+        "image": "https://example.com/images/subcategories/casual-tshirts.jpg",
+        "category_id": 10
+    },
     {
         "name": "Coats",
         "image": "https://example.com/images/subcategories/coats.jpg",
-        "category_id": 14
+        "category_id": 11
     },
     {
-        "name": "Parkas",
-        "image": "https://example.com/images/subcategories/parkas.jpg",
-        "category_id": 14
+        "name": "Jackets",
+        "image": "https://example.com/images/subcategories/jackets.jpg",
+        "category_id": 11
     },
     {
-        "name": "Bomber Jackets",
-        "image": "https://example.com/images/subcategories/bomber.jpg",
-        "category_id": 14
-    },
-
-    {
-        "name": "Swimsuits",
-        "image": "https://example.com/images/subcategories/swimsuits.jpg",
-        "category_id": 15
+        "name": "Hoodies",
+        "image": "https://example.com/images/subcategories/hoodies.jpg",
+        "category_id": 11
     },
     {
-        "name": "Bikinis",
-        "image": "https://example.com/images/subcategories/bikinis.jpg",
-        "category_id": 15
-    },
-    {
-        "name": "Cover Ups",
-        "image": "https://example.com/images/subcategories/coverups.jpg",
-        "category_id": 15
-    },
-
-    {
-        "name": "Maternity Tops",
-        "image": "https://example.com/images/subcategories/maternity-tops.jpg",
-        "category_id": 16
-    },
-    {
-        "name": "Maternity Dresses",
-        "image": "https://example.com/images/subcategories/maternity-dresses.jpg",
-        "category_id": 16
-    },
-
-    {
-        "name": "Organic Cotton",
-        "image": "https://example.com/images/subcategories/organic.jpg",
-        "category_id": 17
-    },
-    {
-        "name": "Recycled Fabrics",
-        "image": "https://example.com/images/subcategories/recycled.jpg",
-        "category_id": 17
-    },
-
-    {
-        "name": "Gift Cards",
-        "image": "https://example.com/images/subcategories/gift-cards.jpg",
-        "category_id": 18
-    },
-    {
-        "name": "Gift Sets",
-        "image": "https://example.com/images/subcategories/gift-sets.jpg",
-        "category_id": 18
-    },
-    {
-        "name": "Holiday Specials",
-        "image": "https://example.com/images/subcategories/holiday-specials.jpg",
-        "category_id": 18
+        "name": "Cardigans",
+        "image": "https://example.com/images/subcategories/cardigans.jpg",
+        "category_id": 11
     }
 ]

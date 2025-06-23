@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Category;
+use App\Models\Products\Product;
 use App\Models\SubCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -14,15 +15,13 @@ class CategoryController extends Controller
     public function list(Request $request)
     {
         $category = new Category();
-        $categs = $category::simplePaginate(10);
+        $categs = $category::with('sub_category.product')->simplePaginate(10);
+
+
         $count = $category::count();
 
-        if ($request->ajax()) {
-
-            return view('Admin.pages.categories', ['categs' => $categs, 'count' => $count])->render();
-        } else {
-            return view('Admin.pages.categories', ['categs' => $categs, 'count' => $count]);
-        }
+        // return $categs;
+        return view('Admin.pages.categories', ['categs' => $categs, 'count' => $count]);
     }
 
     public function add()

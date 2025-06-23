@@ -38,7 +38,7 @@
                                     <div class="form-group row">
                                         <label for="title" class="col-sm-2 col-form-label">Product Title <span class="text-danger">*</span></label>
                                         <div class="col-sm-10">
-                                            <input type="text" id="title" class="form-control" name="title" placeholder="Product Name">
+                                            <input value="{{ old('title') }}" type="text" id="title" class="form-control" name="title" placeholder="Product Name">
                                             <span class="text-danger d-block mt-2">
                                                 @error('title') {{ $message }} @enderror
                                             </span>
@@ -49,7 +49,7 @@
                                     <div class="form-group mt-5 row">
                                         <label for="description" class="col-sm-2 col-form-label">Product Description <span class="text-danger">*</span></label>
                                         <div class="col-sm-10">
-                                            <textarea class="form-control" id="description" name="description" rows="5"></textarea>
+                                            <textarea class="form-control" id="description" name="description" rows="5">{{ old('description') }}</textarea>
                                             <span class="text-danger d-block mt-2">
                                                 @error('description') {{ $message }} @enderror
                                             </span>

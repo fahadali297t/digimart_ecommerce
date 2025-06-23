@@ -111,6 +111,9 @@ class ProductController extends Controller
                 'supportImg5' => $path5,
 
             ]);
+            $sub = SubCategory::find($request->sub_category);
+            $sub->product_count += 1;
+            $sub->save();
             return redirect()->route('admin.product.list');
         }
     }

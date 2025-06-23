@@ -12,20 +12,16 @@
         "image": "https://example.com/images/categories/kids.jpg"
     },
     {
-        "name": "Accessories",
-        "image": "https://example.com/images/categories/accessories.jpg"
-    },
-    {
         "name": "Footwear",
         "image": "https://example.com/images/categories/footwear.jpg"
     },
     {
-        "name": "Activewear",
-        "image": "https://example.com/images/categories/activewear.jpg"
+        "name": "Wedding",
+        "image": "https://example.com/images/categories/wedding.jpg"
     },
     {
-        "name": "Loungewear",
-        "image": "https://example.com/images/categories/loungewear.jpg"
+        "name": "Accessories",
+        "image": "https://example.com/images/categories/accessories.jpg"
     },
     {
         "name": "New Arrivals",
@@ -34,14 +30,6 @@
     {
         "name": "Sale",
         "image": "https://example.com/images/categories/sale.jpg"
-    },
-    {
-        "name": "Essentials",
-        "image": "https://example.com/images/categories/essentials.jpg"
-    },
-    {
-        "name": "Plus Size",
-        "image": "https://example.com/images/categories/plus-size.jpg"
     },
     {
         "name": "Formalwear",
@@ -54,21 +42,5 @@
     {
         "name": "Outerwear",
         "image": "https://example.com/images/categories/outerwear.jpg"
-    },
-    {
-        "name": "Swimwear",
-        "image": "https://example.com/images/categories/swimwear.jpg"
-    },
-    {
-        "name": "Maternity",
-        "image": "https://example.com/images/categories/maternity.jpg"
-    },
-    {
-        "name": "Sustainable",
-        "image": "https://example.com/images/categories/sustainable.jpg"
-    },
-    {
-        "name": "Gift Ideas",
-        "image": "https://example.com/images/categories/gift-ideas.jpg"
     }
 ]

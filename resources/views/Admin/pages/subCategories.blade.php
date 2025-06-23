@@ -61,7 +61,7 @@
                         <td><p class="text-reset" tabindex="-1">{{ $cat->name }}</p></td>
                        
                         <td>
-                          20
+                          {{ $cat->product_count }}
                         </td>
                         <td>
                           {{ $cat->category->name }}
