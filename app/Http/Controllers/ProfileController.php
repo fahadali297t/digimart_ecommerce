@@ -20,6 +20,16 @@ class ProfileController extends Controller
             'user' => $request->user(),
         ]);
     }
+    public function resetForm()
+    {
+        return view('profile.resetPass');
+    }
+    public function accountForm(Request $request)
+    {
+        return view('profile.accountDetails', [
+            'user' => $request->user(),
+        ]);
+    }
 
     /**
      * Update the user's profile information.
@@ -34,7 +44,7 @@ class ProfileController extends Controller
 
         $request->user()->save();
 
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
+        return Redirect::route('dashboard')->with('status', 'profile-updated');
     }
 
     /**

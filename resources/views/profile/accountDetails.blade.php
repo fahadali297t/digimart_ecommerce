@@ -48,10 +48,11 @@
          </div>
 
 
-         <div class="container m-auto mt-10 ">
+         <div class="container px-5 md:px-0 m-auto mt-10 ">
              <div class="grid grid-cols-12">
                  <x-profile-nav />
-                 <div id="content" class="col-span-12 lg:col-span-8 content">
+                 <div id="content" class="col-span-12 mt-10 lg:col-span-8 content">
+                     @include('profile.partials.update-profile-information-form')
 
                  </div>
              </div>

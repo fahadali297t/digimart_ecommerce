@@ -6,3 +6,19 @@ document.querySelectorAll(".image_upload").forEach(function (input) {
         this.previousElementSibling.innerText = fileName;
     });
 });
+
+function toggleMenu() {
+    // console.log("hello");
+    document.getElementById("mobile_nav").classList.toggle("hidden");
+}
+
+document.getElementById("categoryNav").onmouseenter = function () {
+    document.getElementById("dropdownNav").classList.toggle("hidden");
+};
+
+document.getElementById("categoryNav").onmouseleave = function () {
+    document.getElementById("dropdownNav").classList.toggle("hidden");
+};
+
+// for profile ajax
+

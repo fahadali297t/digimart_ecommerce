@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navlink {
+    @apply w-20 text-center hover:cursor-pointer font-normal  hover:border-b-4 hover:border-black py-5 border-b-4 border-transparent;
+}
