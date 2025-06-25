@@ -19,3 +19,10 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
+.shop_header {
+    background-image: url("/public/storage/uploads/685b7e2846502.jpg") !important;
+    background-position: center;
+    background-size: cover;
+    
+}

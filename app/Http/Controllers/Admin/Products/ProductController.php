@@ -246,4 +246,11 @@ class ProductController extends Controller
 
         return view('singleProduct', ['product' => $product]);
     }
+    // view single Product
+    public function shop()
+    {
+        $product  = Product::with('sub_category.category', 'product_image')->simplePaginate(20);
+
+        return view('shop', ['product' => $product]);
+    }
 }

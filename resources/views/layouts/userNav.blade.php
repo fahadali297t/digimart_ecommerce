@@ -6,16 +6,16 @@
     <div class="flex justify-between items-center gap-10">
         <h3 class="text-2xl font-semibold ">Chawkbazar</h3>
         <div class=" hidden lg:flex justify-center items-center  gap-10">
-            <a href="" class=" navlink">Home</a>
+            <a href="{{ route('welcome') }}" class=" navlink">Home</a>
             <div href="" id="categoryNav"
                 class="navlink category relative w-52 flex justify-center items-center gap-3 ">
                 Category
                 <img class="pt-1" src="{{ asset('assets/dist/img/icons/arrowdown.svg') }}" alt=""
                     srcset="">
                 <div id="dropdownNav"
-                    class="absolute hidden transition-transform duration-200 ease-in   dropdownNav  top-14 px-3 py-5 left-0 ">
+                    class="absolute z-50 hidden transition-transform duration-200 ease-in   dropdownNav  top-14 px-3 py-5 left-0 ">
                     <div
-                        class="size-full grid bg-white/60 pt-5 backdrop-blur-md rounded-2xl shadow-lg border border-white/30 gap-y-10 gap-x-2 grid-cols-3 xl:grid-cols-5 ">
+                        class="size-full grid bg-white/90 pt-5 backdrop-blur-md rounded-2xl shadow-lg border border-white/30 gap-y-10 gap-x-2 grid-cols-3 xl:grid-cols-5 ">
 
                         @forelse ($categories as $cat)
                             <div class="flex flex-col justify-start items-start px-5 pb-5 gap-2">
@@ -40,7 +40,7 @@
 
 
 
-            <a href="" class="navlink">Shop</a>
+            <a href="{{ route('shop') }}" class="navlink">Shop</a>
             <a href="" class=" navlink">Search</a>
             <a href="" class=" navlink">Blogs</a>
 
@@ -87,7 +87,7 @@
 </nav>
 {{-- for Mobile --}}
 <nav id="mobile_nav"
-    class="w-full  hidden h-[100vh] absolute top-0 left-0 bg-white px-5 py-6 flex lg:hidden  justify-center flex-col items-start z-50">
+    class="w-full  hidden h-[100vh] fixed top-0 left-0 bg-white px-5 py-6 flex lg:hidden  justify-center flex-col items-start z-50">
     <div class="w-full flex justify-between items-center">
         <h3 class="text-2xl text-start font-semibold  w-full ">Chawkbazar</h3>
         <button type="button" onclick="toggleMenu();">
@@ -104,13 +104,13 @@
     <div class="flex flex-col size-full justify-around  items-center gap-10">
 
         <div class="flex flex-col justify-center items-center  gap-10">
-            <a href="" class=" hover:underline text-lg hover:cursor-pointer font-normal ">
+            <a href="{{ route('welcome') }}" class=" hover:underline text-lg hover:cursor-pointer font-normal ">
                 Home
             </a>
             <a href="" class=" text-lg hover:cursor-pointer font-normal ">
                 Category
             </a>
-            <a href="" class=" text-lg hover:cursor-pointer font-normal ">
+            <a href="{{ route('shop') }}" class=" text-lg hover:cursor-pointer font-normal ">
                 Shop
             </a>
             <a href="" class=" text-lg hover:cursor-pointer font-normal ">
@@ -131,13 +131,13 @@
 </nav>
 
 <div class="w-full px-5 py-5 flex justify-around lg:hidden items-center bg-white  fixed bottom-0 left-0">
-    <a>
+    <a href="">
         <img src="{{ asset('assets/dist/img/icons/search.svg') }}" alt="" srcset="">
     </a>
     <a href ="{{ route('welcome') }}">
         <img src="{{ asset('assets/dist/img/icons/home.svg') }}" alt="" srcset="">
     </a>
-    <a>
+    <a href="">
         <img src="{{ asset('assets/dist/img/icons/cart.svg') }}" alt="" srcset="">
     </a>
     <a href="{{ route('dashboard') }}">

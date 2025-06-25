@@ -18,10 +18,7 @@
     @yield('content')
 
     {{-- js --}}
+    <script src="{{ asset('assets/dist/js/custom.js') }}"></script>
+</body>
 
-    <script src="{{ asset('assets/dist/js/custom.js') }}">
-        < /> <
-        /body>
-
-        <
-        /html>
+</html>

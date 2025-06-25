@@ -6,5 +6,6 @@
 
     <main class="w-full min-h-[100vh]">
 
+        
     </main>
 @endsection

@@ -20,3 +20,19 @@
 .font-satisfy {
     font-family: "Satisfy", cursive !important;
 }
+
+nav[role="navigation"] a,
+nav[role="navigation"] span {
+    z-index: -100 !important;
+    background-color: white !important;
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+nav[role="navigation"] a:hover,
+nav[role="navigation"] span:hover {
+    color: white !important;
+    background-color: black !important;
+}

@@ -21,6 +21,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/product/{slug}', [ProductController::class, 'singleProduct']);
 
 Route::get('/products', [ProductController::class, 'jsonlist']);
+Route::get('/shop', [ProductController::class, 'shop'])->name('shop');
 
 require __DIR__ . '/auth.php';
 require __DIR__ . '/admin.php';
