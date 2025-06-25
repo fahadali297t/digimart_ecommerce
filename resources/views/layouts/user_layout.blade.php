@@ -10,14 +10,18 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('assets/dist/css/user.css') }}">
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
 </head>
 
 <body>
     @yield('content')
 
     {{-- js --}}
-    <script src="https://kit.fontawesome.com/0e26b3244d.js" crossorigin="anonymous"></script>
-    <script src="{{ asset('assets/dist/js/custom.js') }}"></script>
-</body>
 
-</html>
+    <script src="{{ asset('assets/dist/js/custom.js') }}">
+        < /> <
+        /body>
+
+        <
+        /html>

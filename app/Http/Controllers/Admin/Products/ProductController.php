@@ -16,7 +16,7 @@ class ProductController extends Controller
     {
         // $pro = SubCategory::with('product')->get();
 
-        $pro = Product::orderBy('id', 'desc')->with(['product_image', 'sub_category.category'])->simplePaginate(10);
+        $pro = Product::orderBy('id')->with(['product_image', 'sub_category.category'])->simplePaginate(10);
         $count  = Product::count();
         return view('Admin.pages.product.products', ['products' => $pro, 'count' => $count]);
     }
@@ -88,18 +88,18 @@ class ProductController extends Controller
             $fileName3 = uniqid() . '_' . $request->file('product_image3')->getClientOriginalName();
 
             $coverPath = $request->cover->storeAs('uploads/product', $cover, 'public');
-            $path1 = $request->cover->storeAs('uploads/product', $fileName1, 'public');
-            $path2 = $request->cover->storeAs('uploads/product', $fileName2, 'public');
-            $path3 = $request->cover->storeAs('uploads/product', $fileName3, 'public');
+            $path1 = $request->product_image1->storeAs('uploads/product', $fileName1, 'public');
+            $path2 = $request->product_image2->storeAs('uploads/product', $fileName2, 'public');
+            $path3 = $request->product_image3->storeAs('uploads/product', $fileName3, 'public');
             $path4 = null;
             $path5 = null;
             if ($request->hasFile('product_image4') && $request->file('product_image4')->isValid()) {
                 $fileName4 = uniqid() . '_' . $request->file('product_image4')->getClientOriginalName();
-                $path4 = $request->cover->storeAs('uploads/product', $fileName4, 'public');
+                $path4 = $request->product_image4->storeAs('uploads/product', $fileName4, 'public');
             }
             if ($request->hasFile('product_image5') && $request->file('product_image5')->isValid()) {
                 $fileName5 = uniqid() . '_' . $request->file('product_image5')->getClientOriginalName();
-                $path5 = $request->cover->storeAs('uploads/product', $fileName5, 'public');
+                $path5 = $request->product_image5->storeAs('uploads/product', $fileName5, 'public');
             }
 
             $product->product_image()->create([
@@ -183,18 +183,18 @@ class ProductController extends Controller
             $fileName3 = uniqid() . '_' . $request->file('product_image3')->getClientOriginalName();
 
             $coverPath = $request->cover->storeAs('uploads/product', $cover, 'public');
-            $path1 = $request->cover->storeAs('uploads/product', $fileName1, 'public');
-            $path2 = $request->cover->storeAs('uploads/product', $fileName2, 'public');
-            $path3 = $request->cover->storeAs('uploads/product', $fileName3, 'public');
+            $path1 = $request->product_image1->storeAs('uploads/product', $fileName1, 'public');
+            $path2 = $request->product_image2->storeAs('uploads/product', $fileName2, 'public');
+            $path3 = $request->product_image3->storeAs('uploads/product', $fileName3, 'public');
             $path4 = null;
             $path5 = null;
             if ($request->hasFile('product_image4') && $request->file('product_image4')->isValid()) {
                 $fileName4 = uniqid() . '_' . $request->file('product_image4')->getClientOriginalName();
-                $path4 = $request->cover->storeAs('uploads/product', $fileName4, 'public');
+                $path4 = $request->product_image4->storeAs('uploads/product', $fileName4, 'public');
             }
             if ($request->hasFile('product_image5') && $request->file('product_image5')->isValid()) {
                 $fileName5 = uniqid() . '_' . $request->file('product_image5')->getClientOriginalName();
-                $path5 = $request->cover->storeAs('uploads/product', $fileName5, 'public');
+                $path5 = $request->product_image5->storeAs('uploads/product', $fileName5, 'public');
             }
 
             $product->product_image()->update([
@@ -237,5 +237,13 @@ class ProductController extends Controller
             $product->delete();
         }
         return redirect()->route('admin.product.list');
+    }
+
+    // view single Product
+    public function singleProduct(Request $request)
+    {
+        $product  = Product::with('sub_category.category', 'product_image')->where('slug', $request->slug)->first();
+
+        return view('singleProduct', ['product' => $product]);
     }
 }

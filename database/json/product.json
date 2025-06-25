@@ -1,0 +1,2378 @@
+[
+    {
+        "name": "Urban Classic Tee",
+        "slug": "urban-classic-tee",
+        "description": "Urban Classic Tee crafted from premium, breathable cotton fabric for unmatched comfort and everyday style.",
+        "price": 1199,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 1
+    },
+    {
+        "name": "Signature Cotton Crew",
+        "slug": "signature-cotton-crew",
+        "description": "Signature Cotton Crew crafted from premium, breathable cotton fabric for unmatched comfort and everyday style.",
+        "price": 1299,
+        "discount_price": 1099,
+        "quantity": 22,
+        "sub_category_id": 1
+    },
+    {
+        "name": "Streetline Graphic Tee",
+        "slug": "streetline-graphic-tee",
+        "description": "Streetline Graphic Tee crafted from premium, breathable cotton fabric for unmatched comfort and everyday style.",
+        "price": 1299,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 1
+    },
+    {
+        "name": "Urban Classic Tee",
+        "slug": "urban-classic-tee",
+        "description": "Urban Classic Tee crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1399,
+        "discount_price": 1199,
+        "quantity": 24,
+        "sub_category_id": 1
+    },
+    {
+        "name": "Minimalist Round Neck Tee",
+        "slug": "minimalist-round-neck-tee",
+        "description": "Minimalist Round Neck Tee crafted from premium, breathable cotton fabric for unmatched comfort and everyday style.",
+        "price": 1399,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 1
+    },
+    {
+        "name": "Signature Cotton Crew",
+        "slug": "signature-cotton-crew",
+        "description": "Signature Cotton Crew crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1499,
+        "discount_price": 1299,
+        "quantity": 26,
+        "sub_category_id": 1
+    },
+    {
+        "name": "Oxford Button-Down",
+        "slug": "oxford-button-down",
+        "description": "Oxford Button-Down crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1299,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 2
+    },
+    {
+        "name": "Casual Chambray Shirt",
+        "slug": "casual-chambray-shirt",
+        "description": "Casual Chambray Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1399,
+        "discount_price": 1199,
+        "quantity": 22,
+        "sub_category_id": 2
+    },
+    {
+        "name": "Tailored Fit Dress Shirt",
+        "slug": "tailored-fit-dress-shirt",
+        "description": "Tailored Fit Dress Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1399,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 2
+    },
+    {
+        "name": "Denim Collared Shirt",
+        "slug": "denim-collared-shirt",
+        "description": "Denim Collared Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1499,
+        "discount_price": 1299,
+        "quantity": 24,
+        "sub_category_id": 2
+    },
+    {
+        "name": "Checkered Smart Shirt",
+        "slug": "checkered-smart-shirt",
+        "description": "Checkered Smart Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1499,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 2
+    },
+    {
+        "name": "Classic Formal Shirt",
+        "slug": "classic-formal-shirt",
+        "description": "Classic Formal Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1599,
+        "discount_price": 1399,
+        "quantity": 26,
+        "sub_category_id": 2
+    },
+    {
+        "name": "Karandi Traditional Suit",
+        "slug": "karandi-traditional-suit",
+        "description": "Karandi Traditional Suit crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1399,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 3
+    },
+    {
+        "name": "Premium Cotton Kameez",
+        "slug": "premium-cotton-kameez",
+        "description": "Premium Cotton Kameez crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1499,
+        "discount_price": 1299,
+        "quantity": 22,
+        "sub_category_id": 3
+    },
+    {
+        "name": "Classic Linen Shalwar Kameez",
+        "slug": "classic-linen-shalwar-kameez",
+        "description": "Classic Linen Shalwar Kameez crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1499,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 3
+    },
+    {
+        "name": "Luxury Jamawar Suit",
+        "slug": "luxury-jamawar-suit",
+        "description": "Luxury Jamawar Suit crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1599,
+        "discount_price": 1399,
+        "quantity": 24,
+        "sub_category_id": 3
+    },
+    {
+        "name": "Basic Daily Wear Kameez",
+        "slug": "basic-daily-wear-kameez",
+        "description": "Basic Daily Wear Kameez crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1599,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 3
+    },
+    {
+        "name": "Signature Lawn Ensemble",
+        "slug": "signature-lawn-ensemble",
+        "description": "Signature Lawn Ensemble crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1699,
+        "discount_price": 1499,
+        "quantity": 26,
+        "sub_category_id": 3
+    },
+    {
+        "name": "Slim Fit Denim",
+        "slug": "slim-fit-denim",
+        "description": "Slim Fit Denim crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1499,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 4
+    },
+    {
+        "name": "Straight Leg Jeans",
+        "slug": "straight-leg-jeans",
+        "description": "Straight Leg Jeans crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1599,
+        "discount_price": 1399,
+        "quantity": 22,
+        "sub_category_id": 4
+    },
+    {
+        "name": "Distressed Blue Jeans",
+        "slug": "distressed-blue-jeans",
+        "description": "Distressed Blue Jeans crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1599,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 4
+    },
+    {
+        "name": "Tapered Black Jeans",
+        "slug": "tapered-black-jeans",
+        "description": "Tapered Black Jeans crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1699,
+        "discount_price": 1499,
+        "quantity": 24,
+        "sub_category_id": 4
+    },
+    {
+        "name": "Ripped Streetwear Denim",
+        "slug": "ripped-streetwear-denim",
+        "description": "Ripped Streetwear Denim crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1699,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 4
+    },
+    {
+        "name": "Classic Indigo Jeans",
+        "slug": "classic-indigo-jeans",
+        "description": "Classic Indigo Jeans crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1799,
+        "discount_price": 1599,
+        "quantity": 26,
+        "sub_category_id": 4
+    },
+    {
+        "name": "Kurti 1",
+        "slug": "kurti-1",
+        "description": "Kurti 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 1599,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 5
+    },
+    {
+        "name": "Kurti 2",
+        "slug": "kurti-2",
+        "description": "Kurti 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 1699,
+        "discount_price": 1499,
+        "quantity": 22,
+        "sub_category_id": 5
+    },
+    {
+        "name": "Kurti 3",
+        "slug": "kurti-3",
+        "description": "Kurti 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 1699,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 5
+    },
+    {
+        "name": "Kurti 4",
+        "slug": "kurti-4",
+        "description": "Kurti 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 1799,
+        "discount_price": 1599,
+        "quantity": 24,
+        "sub_category_id": 5
+    },
+    {
+        "name": "Kurti 5",
+        "slug": "kurti-5",
+        "description": "Kurti 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 1799,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 5
+    },
+    {
+        "name": "Kurti 6",
+        "slug": "kurti-6",
+        "description": "Kurti 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 1899,
+        "discount_price": 1699,
+        "quantity": 26,
+        "sub_category_id": 5
+    },
+    {
+        "name": "Karandi Traditional Suit",
+        "slug": "karandi-traditional-suit",
+        "description": "Karandi Traditional Suit crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1699,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 6
+    },
+    {
+        "name": "Premium Cotton Kameez",
+        "slug": "premium-cotton-kameez",
+        "description": "Premium Cotton Kameez crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1799,
+        "discount_price": 1599,
+        "quantity": 22,
+        "sub_category_id": 6
+    },
+    {
+        "name": "Classic Linen Shalwar Kameez",
+        "slug": "classic-linen-shalwar-kameez",
+        "description": "Classic Linen Shalwar Kameez crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1799,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 6
+    },
+    {
+        "name": "Luxury Jamawar Suit",
+        "slug": "luxury-jamawar-suit",
+        "description": "Luxury Jamawar Suit crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1899,
+        "discount_price": 1699,
+        "quantity": 24,
+        "sub_category_id": 6
+    },
+    {
+        "name": "Basic Daily Wear Kameez",
+        "slug": "basic-daily-wear-kameez",
+        "description": "Basic Daily Wear Kameez crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1899,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 6
+    },
+    {
+        "name": "Signature Lawn Ensemble",
+        "slug": "signature-lawn-ensemble",
+        "description": "Signature Lawn Ensemble crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 1999,
+        "discount_price": 1799,
+        "quantity": 26,
+        "sub_category_id": 6
+    },
+    {
+        "name": "Abaya 1",
+        "slug": "abaya-1",
+        "description": "Abaya 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 1799,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 7
+    },
+    {
+        "name": "Abaya 2",
+        "slug": "abaya-2",
+        "description": "Abaya 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 1899,
+        "discount_price": 1699,
+        "quantity": 22,
+        "sub_category_id": 7
+    },
+    {
+        "name": "Abaya 3",
+        "slug": "abaya-3",
+        "description": "Abaya 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 1899,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 7
+    },
+    {
+        "name": "Abaya 4",
+        "slug": "abaya-4",
+        "description": "Abaya 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 1999,
+        "discount_price": 1799,
+        "quantity": 24,
+        "sub_category_id": 7
+    },
+    {
+        "name": "Abaya 5",
+        "slug": "abaya-5",
+        "description": "Abaya 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 1999,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 7
+    },
+    {
+        "name": "Abaya 6",
+        "slug": "abaya-6",
+        "description": "Abaya 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2099,
+        "discount_price": 1899,
+        "quantity": 26,
+        "sub_category_id": 7
+    },
+    {
+        "name": "Unstitched Fabric 1",
+        "slug": "unstitched-fabric-1",
+        "description": "Unstitched Fabric 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 1899,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 8
+    },
+    {
+        "name": "Unstitched Fabric 2",
+        "slug": "unstitched-fabric-2",
+        "description": "Unstitched Fabric 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 1999,
+        "discount_price": 1799,
+        "quantity": 22,
+        "sub_category_id": 8
+    },
+    {
+        "name": "Unstitched Fabric 3",
+        "slug": "unstitched-fabric-3",
+        "description": "Unstitched Fabric 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 1999,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 8
+    },
+    {
+        "name": "Unstitched Fabric 4",
+        "slug": "unstitched-fabric-4",
+        "description": "Unstitched Fabric 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2099,
+        "discount_price": 1899,
+        "quantity": 24,
+        "sub_category_id": 8
+    },
+    {
+        "name": "Unstitched Fabric 5",
+        "slug": "unstitched-fabric-5",
+        "description": "Unstitched Fabric 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2099,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 8
+    },
+    {
+        "name": "Unstitched Fabric 6",
+        "slug": "unstitched-fabric-6",
+        "description": "Unstitched Fabric 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2199,
+        "discount_price": 1999,
+        "quantity": 26,
+        "sub_category_id": 8
+    },
+    {
+        "name": "Boys Clothing 1",
+        "slug": "boys-clothing-1",
+        "description": "Boys Clothing 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 1999,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 9
+    },
+    {
+        "name": "Boys Clothing 2",
+        "slug": "boys-clothing-2",
+        "description": "Boys Clothing 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2099,
+        "discount_price": 1899,
+        "quantity": 22,
+        "sub_category_id": 9
+    },
+    {
+        "name": "Boys Clothing 3",
+        "slug": "boys-clothing-3",
+        "description": "Boys Clothing 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2099,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 9
+    },
+    {
+        "name": "Boys Clothing 4",
+        "slug": "boys-clothing-4",
+        "description": "Boys Clothing 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2199,
+        "discount_price": 1999,
+        "quantity": 24,
+        "sub_category_id": 9
+    },
+    {
+        "name": "Boys Clothing 5",
+        "slug": "boys-clothing-5",
+        "description": "Boys Clothing 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2199,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 9
+    },
+    {
+        "name": "Boys Clothing 6",
+        "slug": "boys-clothing-6",
+        "description": "Boys Clothing 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2299,
+        "discount_price": 2099,
+        "quantity": 26,
+        "sub_category_id": 9
+    },
+    {
+        "name": "Girls Clothing 1",
+        "slug": "girls-clothing-1",
+        "description": "Girls Clothing 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2099,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 10
+    },
+    {
+        "name": "Girls Clothing 2",
+        "slug": "girls-clothing-2",
+        "description": "Girls Clothing 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2199,
+        "discount_price": 1999,
+        "quantity": 22,
+        "sub_category_id": 10
+    },
+    {
+        "name": "Girls Clothing 3",
+        "slug": "girls-clothing-3",
+        "description": "Girls Clothing 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2199,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 10
+    },
+    {
+        "name": "Girls Clothing 4",
+        "slug": "girls-clothing-4",
+        "description": "Girls Clothing 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2299,
+        "discount_price": 2099,
+        "quantity": 24,
+        "sub_category_id": 10
+    },
+    {
+        "name": "Girls Clothing 5",
+        "slug": "girls-clothing-5",
+        "description": "Girls Clothing 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2299,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 10
+    },
+    {
+        "name": "Girls Clothing 6",
+        "slug": "girls-clothing-6",
+        "description": "Girls Clothing 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2399,
+        "discount_price": 2199,
+        "quantity": 26,
+        "sub_category_id": 10
+    },
+    {
+        "name": "Babywear 1",
+        "slug": "babywear-1",
+        "description": "Babywear 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2199,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 11
+    },
+    {
+        "name": "Babywear 2",
+        "slug": "babywear-2",
+        "description": "Babywear 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2299,
+        "discount_price": 2099,
+        "quantity": 22,
+        "sub_category_id": 11
+    },
+    {
+        "name": "Babywear 3",
+        "slug": "babywear-3",
+        "description": "Babywear 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2299,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 11
+    },
+    {
+        "name": "Babywear 4",
+        "slug": "babywear-4",
+        "description": "Babywear 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2399,
+        "discount_price": 2199,
+        "quantity": 24,
+        "sub_category_id": 11
+    },
+    {
+        "name": "Babywear 5",
+        "slug": "babywear-5",
+        "description": "Babywear 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2399,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 11
+    },
+    {
+        "name": "Babywear 6",
+        "slug": "babywear-6",
+        "description": "Babywear 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2499,
+        "discount_price": 2299,
+        "quantity": 26,
+        "sub_category_id": 11
+    },
+    {
+        "name": "Eid Collection 1",
+        "slug": "eid-collection-1",
+        "description": "Eid Collection 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2299,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 12
+    },
+    {
+        "name": "Eid Collection 2",
+        "slug": "eid-collection-2",
+        "description": "Eid Collection 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2399,
+        "discount_price": 2199,
+        "quantity": 22,
+        "sub_category_id": 12
+    },
+    {
+        "name": "Eid Collection 3",
+        "slug": "eid-collection-3",
+        "description": "Eid Collection 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2399,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 12
+    },
+    {
+        "name": "Eid Collection 4",
+        "slug": "eid-collection-4",
+        "description": "Eid Collection 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2499,
+        "discount_price": 2299,
+        "quantity": 24,
+        "sub_category_id": 12
+    },
+    {
+        "name": "Eid Collection 5",
+        "slug": "eid-collection-5",
+        "description": "Eid Collection 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2499,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 12
+    },
+    {
+        "name": "Eid Collection 6",
+        "slug": "eid-collection-6",
+        "description": "Eid Collection 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2599,
+        "discount_price": 2399,
+        "quantity": 26,
+        "sub_category_id": 12
+    },
+    {
+        "name": "Peshawari Chappal 1",
+        "slug": "peshawari-chappal-1",
+        "description": "Peshawari Chappal 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2399,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 13
+    },
+    {
+        "name": "Peshawari Chappal 2",
+        "slug": "peshawari-chappal-2",
+        "description": "Peshawari Chappal 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2499,
+        "discount_price": 2299,
+        "quantity": 22,
+        "sub_category_id": 13
+    },
+    {
+        "name": "Peshawari Chappal 3",
+        "slug": "peshawari-chappal-3",
+        "description": "Peshawari Chappal 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2499,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 13
+    },
+    {
+        "name": "Peshawari Chappal 4",
+        "slug": "peshawari-chappal-4",
+        "description": "Peshawari Chappal 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2599,
+        "discount_price": 2399,
+        "quantity": 24,
+        "sub_category_id": 13
+    },
+    {
+        "name": "Peshawari Chappal 5",
+        "slug": "peshawari-chappal-5",
+        "description": "Peshawari Chappal 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2599,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 13
+    },
+    {
+        "name": "Peshawari Chappal 6",
+        "slug": "peshawari-chappal-6",
+        "description": "Peshawari Chappal 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2699,
+        "discount_price": 2499,
+        "quantity": 26,
+        "sub_category_id": 13
+    },
+    {
+        "name": "Sandal 1",
+        "slug": "sandal-1",
+        "description": "Sandal 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2499,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 14
+    },
+    {
+        "name": "Sandal 2",
+        "slug": "sandal-2",
+        "description": "Sandal 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2599,
+        "discount_price": 2399,
+        "quantity": 22,
+        "sub_category_id": 14
+    },
+    {
+        "name": "Sandal 3",
+        "slug": "sandal-3",
+        "description": "Sandal 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2599,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 14
+    },
+    {
+        "name": "Sandal 4",
+        "slug": "sandal-4",
+        "description": "Sandal 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2699,
+        "discount_price": 2499,
+        "quantity": 24,
+        "sub_category_id": 14
+    },
+    {
+        "name": "Sandal 5",
+        "slug": "sandal-5",
+        "description": "Sandal 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2699,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 14
+    },
+    {
+        "name": "Sandal 6",
+        "slug": "sandal-6",
+        "description": "Sandal 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2799,
+        "discount_price": 2599,
+        "quantity": 26,
+        "sub_category_id": 14
+    },
+    {
+        "name": "Formal Shoe 1",
+        "slug": "formal-shoe-1",
+        "description": "Formal Shoe 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2599,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 15
+    },
+    {
+        "name": "Formal Shoe 2",
+        "slug": "formal-shoe-2",
+        "description": "Formal Shoe 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2699,
+        "discount_price": 2499,
+        "quantity": 22,
+        "sub_category_id": 15
+    },
+    {
+        "name": "Formal Shoe 3",
+        "slug": "formal-shoe-3",
+        "description": "Formal Shoe 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2699,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 15
+    },
+    {
+        "name": "Formal Shoe 4",
+        "slug": "formal-shoe-4",
+        "description": "Formal Shoe 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2799,
+        "discount_price": 2599,
+        "quantity": 24,
+        "sub_category_id": 15
+    },
+    {
+        "name": "Formal Shoe 5",
+        "slug": "formal-shoe-5",
+        "description": "Formal Shoe 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2799,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 15
+    },
+    {
+        "name": "Formal Shoe 6",
+        "slug": "formal-shoe-6",
+        "description": "Formal Shoe 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2899,
+        "discount_price": 2699,
+        "quantity": 26,
+        "sub_category_id": 15
+    },
+    {
+        "name": "Casual Shoe 1",
+        "slug": "casual-shoe-1",
+        "description": "Casual Shoe 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2699,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 16
+    },
+    {
+        "name": "Casual Shoe 2",
+        "slug": "casual-shoe-2",
+        "description": "Casual Shoe 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2799,
+        "discount_price": 2599,
+        "quantity": 22,
+        "sub_category_id": 16
+    },
+    {
+        "name": "Casual Shoe 3",
+        "slug": "casual-shoe-3",
+        "description": "Casual Shoe 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2799,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 16
+    },
+    {
+        "name": "Casual Shoe 4",
+        "slug": "casual-shoe-4",
+        "description": "Casual Shoe 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2899,
+        "discount_price": 2699,
+        "quantity": 24,
+        "sub_category_id": 16
+    },
+    {
+        "name": "Casual Shoe 5",
+        "slug": "casual-shoe-5",
+        "description": "Casual Shoe 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2899,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 16
+    },
+    {
+        "name": "Casual Shoe 6",
+        "slug": "casual-shoe-6",
+        "description": "Casual Shoe 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 2999,
+        "discount_price": 2799,
+        "quantity": 26,
+        "sub_category_id": 16
+    },
+    {
+        "name": "Bridal Dress 1",
+        "slug": "bridal-dress-1",
+        "description": "Bridal Dress 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2799,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 17
+    },
+    {
+        "name": "Bridal Dress 2",
+        "slug": "bridal-dress-2",
+        "description": "Bridal Dress 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2899,
+        "discount_price": 2699,
+        "quantity": 22,
+        "sub_category_id": 17
+    },
+    {
+        "name": "Bridal Dress 3",
+        "slug": "bridal-dress-3",
+        "description": "Bridal Dress 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2899,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 17
+    },
+    {
+        "name": "Bridal Dress 4",
+        "slug": "bridal-dress-4",
+        "description": "Bridal Dress 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 2999,
+        "discount_price": 2799,
+        "quantity": 24,
+        "sub_category_id": 17
+    },
+    {
+        "name": "Bridal Dress 5",
+        "slug": "bridal-dress-5",
+        "description": "Bridal Dress 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 2999,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 17
+    },
+    {
+        "name": "Bridal Dress 6",
+        "slug": "bridal-dress-6",
+        "description": "Bridal Dress 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3099,
+        "discount_price": 2899,
+        "quantity": 26,
+        "sub_category_id": 17
+    },
+    {
+        "name": "Groom Sherwani 1",
+        "slug": "groom-sherwani-1",
+        "description": "Groom Sherwani 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2899,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 18
+    },
+    {
+        "name": "Groom Sherwani 2",
+        "slug": "groom-sherwani-2",
+        "description": "Groom Sherwani 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 2999,
+        "discount_price": 2799,
+        "quantity": 22,
+        "sub_category_id": 18
+    },
+    {
+        "name": "Groom Sherwani 3",
+        "slug": "groom-sherwani-3",
+        "description": "Groom Sherwani 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 2999,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 18
+    },
+    {
+        "name": "Groom Sherwani 4",
+        "slug": "groom-sherwani-4",
+        "description": "Groom Sherwani 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3099,
+        "discount_price": 2899,
+        "quantity": 24,
+        "sub_category_id": 18
+    },
+    {
+        "name": "Groom Sherwani 5",
+        "slug": "groom-sherwani-5",
+        "description": "Groom Sherwani 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3099,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 18
+    },
+    {
+        "name": "Groom Sherwani 6",
+        "slug": "groom-sherwani-6",
+        "description": "Groom Sherwani 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3199,
+        "discount_price": 2999,
+        "quantity": 26,
+        "sub_category_id": 18
+    },
+    {
+        "name": "Mehndi Outfit 1",
+        "slug": "mehndi-outfit-1",
+        "description": "Mehndi Outfit 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 2999,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 19
+    },
+    {
+        "name": "Mehndi Outfit 2",
+        "slug": "mehndi-outfit-2",
+        "description": "Mehndi Outfit 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3099,
+        "discount_price": 2899,
+        "quantity": 22,
+        "sub_category_id": 19
+    },
+    {
+        "name": "Mehndi Outfit 3",
+        "slug": "mehndi-outfit-3",
+        "description": "Mehndi Outfit 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3099,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 19
+    },
+    {
+        "name": "Mehndi Outfit 4",
+        "slug": "mehndi-outfit-4",
+        "description": "Mehndi Outfit 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3199,
+        "discount_price": 2999,
+        "quantity": 24,
+        "sub_category_id": 19
+    },
+    {
+        "name": "Mehndi Outfit 5",
+        "slug": "mehndi-outfit-5",
+        "description": "Mehndi Outfit 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3199,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 19
+    },
+    {
+        "name": "Mehndi Outfit 6",
+        "slug": "mehndi-outfit-6",
+        "description": "Mehndi Outfit 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3299,
+        "discount_price": 3099,
+        "quantity": 26,
+        "sub_category_id": 19
+    },
+    {
+        "name": "Walima Dress 1",
+        "slug": "walima-dress-1",
+        "description": "Walima Dress 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3099,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 20
+    },
+    {
+        "name": "Walima Dress 2",
+        "slug": "walima-dress-2",
+        "description": "Walima Dress 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3199,
+        "discount_price": 2999,
+        "quantity": 22,
+        "sub_category_id": 20
+    },
+    {
+        "name": "Walima Dress 3",
+        "slug": "walima-dress-3",
+        "description": "Walima Dress 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3199,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 20
+    },
+    {
+        "name": "Walima Dress 4",
+        "slug": "walima-dress-4",
+        "description": "Walima Dress 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3299,
+        "discount_price": 3099,
+        "quantity": 24,
+        "sub_category_id": 20
+    },
+    {
+        "name": "Walima Dress 5",
+        "slug": "walima-dress-5",
+        "description": "Walima Dress 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3299,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 20
+    },
+    {
+        "name": "Walima Dress 6",
+        "slug": "walima-dress-6",
+        "description": "Walima Dress 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3399,
+        "discount_price": 3199,
+        "quantity": 26,
+        "sub_category_id": 20
+    },
+    {
+        "name": "Watch 1",
+        "slug": "watch-1",
+        "description": "Watch 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3199,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 21
+    },
+    {
+        "name": "Watch 2",
+        "slug": "watch-2",
+        "description": "Watch 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3299,
+        "discount_price": 3099,
+        "quantity": 22,
+        "sub_category_id": 21
+    },
+    {
+        "name": "Watch 3",
+        "slug": "watch-3",
+        "description": "Watch 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3299,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 21
+    },
+    {
+        "name": "Watch 4",
+        "slug": "watch-4",
+        "description": "Watch 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3399,
+        "discount_price": 3199,
+        "quantity": 24,
+        "sub_category_id": 21
+    },
+    {
+        "name": "Watch 5",
+        "slug": "watch-5",
+        "description": "Watch 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3399,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 21
+    },
+    {
+        "name": "Watch 6",
+        "slug": "watch-6",
+        "description": "Watch 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3499,
+        "discount_price": 3299,
+        "quantity": 26,
+        "sub_category_id": 21
+    },
+    {
+        "name": "Belt 1",
+        "slug": "belt-1",
+        "description": "Belt 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3299,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 22
+    },
+    {
+        "name": "Belt 2",
+        "slug": "belt-2",
+        "description": "Belt 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3399,
+        "discount_price": 3199,
+        "quantity": 22,
+        "sub_category_id": 22
+    },
+    {
+        "name": "Belt 3",
+        "slug": "belt-3",
+        "description": "Belt 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3399,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 22
+    },
+    {
+        "name": "Belt 4",
+        "slug": "belt-4",
+        "description": "Belt 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3499,
+        "discount_price": 3299,
+        "quantity": 24,
+        "sub_category_id": 22
+    },
+    {
+        "name": "Belt 5",
+        "slug": "belt-5",
+        "description": "Belt 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3499,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 22
+    },
+    {
+        "name": "Belt 6",
+        "slug": "belt-6",
+        "description": "Belt 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3599,
+        "discount_price": 3399,
+        "quantity": 26,
+        "sub_category_id": 22
+    },
+    {
+        "name": "Handbag 1",
+        "slug": "handbag-1",
+        "description": "Handbag 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3399,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 23
+    },
+    {
+        "name": "Handbag 2",
+        "slug": "handbag-2",
+        "description": "Handbag 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3499,
+        "discount_price": 3299,
+        "quantity": 22,
+        "sub_category_id": 23
+    },
+    {
+        "name": "Handbag 3",
+        "slug": "handbag-3",
+        "description": "Handbag 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3499,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 23
+    },
+    {
+        "name": "Handbag 4",
+        "slug": "handbag-4",
+        "description": "Handbag 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3599,
+        "discount_price": 3399,
+        "quantity": 24,
+        "sub_category_id": 23
+    },
+    {
+        "name": "Handbag 5",
+        "slug": "handbag-5",
+        "description": "Handbag 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3599,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 23
+    },
+    {
+        "name": "Handbag 6",
+        "slug": "handbag-6",
+        "description": "Handbag 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3699,
+        "discount_price": 3499,
+        "quantity": 26,
+        "sub_category_id": 23
+    },
+    {
+        "name": "Jewelry 1",
+        "slug": "jewelry-1",
+        "description": "Jewelry 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3499,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 24
+    },
+    {
+        "name": "Jewelry 2",
+        "slug": "jewelry-2",
+        "description": "Jewelry 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3599,
+        "discount_price": 3399,
+        "quantity": 22,
+        "sub_category_id": 24
+    },
+    {
+        "name": "Jewelry 3",
+        "slug": "jewelry-3",
+        "description": "Jewelry 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3599,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 24
+    },
+    {
+        "name": "Jewelry 4",
+        "slug": "jewelry-4",
+        "description": "Jewelry 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3699,
+        "discount_price": 3499,
+        "quantity": 24,
+        "sub_category_id": 24
+    },
+    {
+        "name": "Jewelry 5",
+        "slug": "jewelry-5",
+        "description": "Jewelry 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3699,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 24
+    },
+    {
+        "name": "Jewelry 6",
+        "slug": "jewelry-6",
+        "description": "Jewelry 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3799,
+        "discount_price": 3599,
+        "quantity": 26,
+        "sub_category_id": 24
+    },
+    {
+        "name": "Men New Arrival 1",
+        "slug": "men-new-arrival-1",
+        "description": "Men New Arrival 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3599,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 25
+    },
+    {
+        "name": "Men New Arrival 2",
+        "slug": "men-new-arrival-2",
+        "description": "Men New Arrival 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3699,
+        "discount_price": 3499,
+        "quantity": 22,
+        "sub_category_id": 25
+    },
+    {
+        "name": "Men New Arrival 3",
+        "slug": "men-new-arrival-3",
+        "description": "Men New Arrival 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3699,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 25
+    },
+    {
+        "name": "Men New Arrival 4",
+        "slug": "men-new-arrival-4",
+        "description": "Men New Arrival 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3799,
+        "discount_price": 3599,
+        "quantity": 24,
+        "sub_category_id": 25
+    },
+    {
+        "name": "Men New Arrival 5",
+        "slug": "men-new-arrival-5",
+        "description": "Men New Arrival 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3799,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 25
+    },
+    {
+        "name": "Men New Arrival 6",
+        "slug": "men-new-arrival-6",
+        "description": "Men New Arrival 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3899,
+        "discount_price": 3699,
+        "quantity": 26,
+        "sub_category_id": 25
+    },
+    {
+        "name": "Women New Arrival 1",
+        "slug": "women-new-arrival-1",
+        "description": "Women New Arrival 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3699,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 26
+    },
+    {
+        "name": "Women New Arrival 2",
+        "slug": "women-new-arrival-2",
+        "description": "Women New Arrival 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3799,
+        "discount_price": 3599,
+        "quantity": 22,
+        "sub_category_id": 26
+    },
+    {
+        "name": "Women New Arrival 3",
+        "slug": "women-new-arrival-3",
+        "description": "Women New Arrival 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3799,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 26
+    },
+    {
+        "name": "Women New Arrival 4",
+        "slug": "women-new-arrival-4",
+        "description": "Women New Arrival 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3899,
+        "discount_price": 3699,
+        "quantity": 24,
+        "sub_category_id": 26
+    },
+    {
+        "name": "Women New Arrival 5",
+        "slug": "women-new-arrival-5",
+        "description": "Women New Arrival 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3899,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 26
+    },
+    {
+        "name": "Women New Arrival 6",
+        "slug": "women-new-arrival-6",
+        "description": "Women New Arrival 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 3999,
+        "discount_price": 3799,
+        "quantity": 26,
+        "sub_category_id": 26
+    },
+    {
+        "name": "Kids New Arrival 1",
+        "slug": "kids-new-arrival-1",
+        "description": "Kids New Arrival 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3799,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 27
+    },
+    {
+        "name": "Kids New Arrival 2",
+        "slug": "kids-new-arrival-2",
+        "description": "Kids New Arrival 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3899,
+        "discount_price": 3699,
+        "quantity": 22,
+        "sub_category_id": 27
+    },
+    {
+        "name": "Kids New Arrival 3",
+        "slug": "kids-new-arrival-3",
+        "description": "Kids New Arrival 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3899,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 27
+    },
+    {
+        "name": "Kids New Arrival 4",
+        "slug": "kids-new-arrival-4",
+        "description": "Kids New Arrival 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 3999,
+        "discount_price": 3799,
+        "quantity": 24,
+        "sub_category_id": 27
+    },
+    {
+        "name": "Kids New Arrival 5",
+        "slug": "kids-new-arrival-5",
+        "description": "Kids New Arrival 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 3999,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 27
+    },
+    {
+        "name": "Kids New Arrival 6",
+        "slug": "kids-new-arrival-6",
+        "description": "Kids New Arrival 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4099,
+        "discount_price": 3899,
+        "quantity": 26,
+        "sub_category_id": 27
+    },
+    {
+        "name": "Latest Footwear 1",
+        "slug": "latest-footwear-1",
+        "description": "Latest Footwear 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3899,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 28
+    },
+    {
+        "name": "Latest Footwear 2",
+        "slug": "latest-footwear-2",
+        "description": "Latest Footwear 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 3999,
+        "discount_price": 3799,
+        "quantity": 22,
+        "sub_category_id": 28
+    },
+    {
+        "name": "Latest Footwear 3",
+        "slug": "latest-footwear-3",
+        "description": "Latest Footwear 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 3999,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 28
+    },
+    {
+        "name": "Latest Footwear 4",
+        "slug": "latest-footwear-4",
+        "description": "Latest Footwear 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 4099,
+        "discount_price": 3899,
+        "quantity": 24,
+        "sub_category_id": 28
+    },
+    {
+        "name": "Latest Footwear 5",
+        "slug": "latest-footwear-5",
+        "description": "Latest Footwear 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 4099,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 28
+    },
+    {
+        "name": "Latest Footwear 6",
+        "slug": "latest-footwear-6",
+        "description": "Latest Footwear 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4199,
+        "discount_price": 3999,
+        "quantity": 26,
+        "sub_category_id": 28
+    },
+    {
+        "name": "Men's Sale 1",
+        "slug": "men's-sale-1",
+        "description": "Men's Sale 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 3999,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 29
+    },
+    {
+        "name": "Men's Sale 2",
+        "slug": "men's-sale-2",
+        "description": "Men's Sale 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 4099,
+        "discount_price": 3899,
+        "quantity": 22,
+        "sub_category_id": 29
+    },
+    {
+        "name": "Men's Sale 3",
+        "slug": "men's-sale-3",
+        "description": "Men's Sale 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 4099,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 29
+    },
+    {
+        "name": "Men's Sale 4",
+        "slug": "men's-sale-4",
+        "description": "Men's Sale 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 4199,
+        "discount_price": 3999,
+        "quantity": 24,
+        "sub_category_id": 29
+    },
+    {
+        "name": "Men's Sale 5",
+        "slug": "men's-sale-5",
+        "description": "Men's Sale 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 4199,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 29
+    },
+    {
+        "name": "Men's Sale 6",
+        "slug": "men's-sale-6",
+        "description": "Men's Sale 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4299,
+        "discount_price": 4099,
+        "quantity": 26,
+        "sub_category_id": 29
+    },
+    {
+        "name": "Women's Sale 1",
+        "slug": "women's-sale-1",
+        "description": "Women's Sale 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 4099,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 30
+    },
+    {
+        "name": "Women's Sale 2",
+        "slug": "women's-sale-2",
+        "description": "Women's Sale 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 4199,
+        "discount_price": 3999,
+        "quantity": 22,
+        "sub_category_id": 30
+    },
+    {
+        "name": "Women's Sale 3",
+        "slug": "women's-sale-3",
+        "description": "Women's Sale 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 4199,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 30
+    },
+    {
+        "name": "Women's Sale 4",
+        "slug": "women's-sale-4",
+        "description": "Women's Sale 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 4299,
+        "discount_price": 4099,
+        "quantity": 24,
+        "sub_category_id": 30
+    },
+    {
+        "name": "Women's Sale 5",
+        "slug": "women's-sale-5",
+        "description": "Women's Sale 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 4299,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 30
+    },
+    {
+        "name": "Women's Sale 6",
+        "slug": "women's-sale-6",
+        "description": "Women's Sale 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4399,
+        "discount_price": 4199,
+        "quantity": 26,
+        "sub_category_id": 30
+    },
+    {
+        "name": "Kids' Sale 1",
+        "slug": "kids'-sale-1",
+        "description": "Kids' Sale 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 4199,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 31
+    },
+    {
+        "name": "Kids' Sale 2",
+        "slug": "kids'-sale-2",
+        "description": "Kids' Sale 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 4299,
+        "discount_price": 4099,
+        "quantity": 22,
+        "sub_category_id": 31
+    },
+    {
+        "name": "Kids' Sale 3",
+        "slug": "kids'-sale-3",
+        "description": "Kids' Sale 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 4299,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 31
+    },
+    {
+        "name": "Kids' Sale 4",
+        "slug": "kids'-sale-4",
+        "description": "Kids' Sale 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 4399,
+        "discount_price": 4199,
+        "quantity": 24,
+        "sub_category_id": 31
+    },
+    {
+        "name": "Kids' Sale 5",
+        "slug": "kids'-sale-5",
+        "description": "Kids' Sale 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 4399,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 31
+    },
+    {
+        "name": "Kids' Sale 6",
+        "slug": "kids'-sale-6",
+        "description": "Kids' Sale 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4499,
+        "discount_price": 4299,
+        "quantity": 26,
+        "sub_category_id": 31
+    },
+    {
+        "name": "Footwear Sale 1",
+        "slug": "footwear-sale-1",
+        "description": "Footwear Sale 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 4299,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 32
+    },
+    {
+        "name": "Footwear Sale 2",
+        "slug": "footwear-sale-2",
+        "description": "Footwear Sale 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 4399,
+        "discount_price": 4199,
+        "quantity": 22,
+        "sub_category_id": 32
+    },
+    {
+        "name": "Footwear Sale 3",
+        "slug": "footwear-sale-3",
+        "description": "Footwear Sale 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 4399,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 32
+    },
+    {
+        "name": "Footwear Sale 4",
+        "slug": "footwear-sale-4",
+        "description": "Footwear Sale 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 4499,
+        "discount_price": 4299,
+        "quantity": 24,
+        "sub_category_id": 32
+    },
+    {
+        "name": "Footwear Sale 5",
+        "slug": "footwear-sale-5",
+        "description": "Footwear Sale 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 4499,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 32
+    },
+    {
+        "name": "Footwear Sale 6",
+        "slug": "footwear-sale-6",
+        "description": "Footwear Sale 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4599,
+        "discount_price": 4399,
+        "quantity": 26,
+        "sub_category_id": 32
+    },
+    {
+        "name": "Men's Suit 1",
+        "slug": "men's-suit-1",
+        "description": "Men's Suit 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 4399,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 33
+    },
+    {
+        "name": "Men's Suit 2",
+        "slug": "men's-suit-2",
+        "description": "Men's Suit 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 4499,
+        "discount_price": 4299,
+        "quantity": 22,
+        "sub_category_id": 33
+    },
+    {
+        "name": "Men's Suit 3",
+        "slug": "men's-suit-3",
+        "description": "Men's Suit 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 4499,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 33
+    },
+    {
+        "name": "Men's Suit 4",
+        "slug": "men's-suit-4",
+        "description": "Men's Suit 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 4599,
+        "discount_price": 4399,
+        "quantity": 24,
+        "sub_category_id": 33
+    },
+    {
+        "name": "Men's Suit 5",
+        "slug": "men's-suit-5",
+        "description": "Men's Suit 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 4599,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 33
+    },
+    {
+        "name": "Men's Suit 6",
+        "slug": "men's-suit-6",
+        "description": "Men's Suit 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4699,
+        "discount_price": 4499,
+        "quantity": 26,
+        "sub_category_id": 33
+    },
+    {
+        "name": "Oxford Button-Down",
+        "slug": "oxford-button-down",
+        "description": "Oxford Button-Down crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4499,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 34
+    },
+    {
+        "name": "Casual Chambray Shirt",
+        "slug": "casual-chambray-shirt",
+        "description": "Casual Chambray Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4599,
+        "discount_price": 4399,
+        "quantity": 22,
+        "sub_category_id": 34
+    },
+    {
+        "name": "Tailored Fit Dress Shirt",
+        "slug": "tailored-fit-dress-shirt",
+        "description": "Tailored Fit Dress Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4599,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 34
+    },
+    {
+        "name": "Denim Collared Shirt",
+        "slug": "denim-collared-shirt",
+        "description": "Denim Collared Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4699,
+        "discount_price": 4499,
+        "quantity": 24,
+        "sub_category_id": 34
+    },
+    {
+        "name": "Checkered Smart Shirt",
+        "slug": "checkered-smart-shirt",
+        "description": "Checkered Smart Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4699,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 34
+    },
+    {
+        "name": "Classic Formal Shirt",
+        "slug": "classic-formal-shirt",
+        "description": "Classic Formal Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4799,
+        "discount_price": 4599,
+        "quantity": 26,
+        "sub_category_id": 34
+    },
+    {
+        "name": "Women's Party Dress 1",
+        "slug": "women's-party-dress-1",
+        "description": "Women's Party Dress 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 4599,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 35
+    },
+    {
+        "name": "Women's Party Dress 2",
+        "slug": "women's-party-dress-2",
+        "description": "Women's Party Dress 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 4699,
+        "discount_price": 4499,
+        "quantity": 22,
+        "sub_category_id": 35
+    },
+    {
+        "name": "Women's Party Dress 3",
+        "slug": "women's-party-dress-3",
+        "description": "Women's Party Dress 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 4699,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 35
+    },
+    {
+        "name": "Women's Party Dress 4",
+        "slug": "women's-party-dress-4",
+        "description": "Women's Party Dress 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 4799,
+        "discount_price": 4599,
+        "quantity": 24,
+        "sub_category_id": 35
+    },
+    {
+        "name": "Women's Party Dress 5",
+        "slug": "women's-party-dress-5",
+        "description": "Women's Party Dress 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 4799,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 35
+    },
+    {
+        "name": "Women's Party Dress 6",
+        "slug": "women's-party-dress-6",
+        "description": "Women's Party Dress 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4899,
+        "discount_price": 4699,
+        "quantity": 26,
+        "sub_category_id": 35
+    },
+    {
+        "name": "Formal Kurti 1",
+        "slug": "formal-kurti-1",
+        "description": "Formal Kurti 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 4699,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 36
+    },
+    {
+        "name": "Formal Kurti 2",
+        "slug": "formal-kurti-2",
+        "description": "Formal Kurti 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 4799,
+        "discount_price": 4599,
+        "quantity": 22,
+        "sub_category_id": 36
+    },
+    {
+        "name": "Formal Kurti 3",
+        "slug": "formal-kurti-3",
+        "description": "Formal Kurti 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 4799,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 36
+    },
+    {
+        "name": "Formal Kurti 4",
+        "slug": "formal-kurti-4",
+        "description": "Formal Kurti 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 4899,
+        "discount_price": 4699,
+        "quantity": 24,
+        "sub_category_id": 36
+    },
+    {
+        "name": "Formal Kurti 5",
+        "slug": "formal-kurti-5",
+        "description": "Formal Kurti 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 4899,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 36
+    },
+    {
+        "name": "Formal Kurti 6",
+        "slug": "formal-kurti-6",
+        "description": "Formal Kurti 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 4999,
+        "discount_price": 4799,
+        "quantity": 26,
+        "sub_category_id": 36
+    },
+    {
+        "name": "Oxford Button-Down",
+        "slug": "oxford-button-down",
+        "description": "Oxford Button-Down crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4799,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 37
+    },
+    {
+        "name": "Casual Chambray Shirt",
+        "slug": "casual-chambray-shirt",
+        "description": "Casual Chambray Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4899,
+        "discount_price": 4699,
+        "quantity": 22,
+        "sub_category_id": 37
+    },
+    {
+        "name": "Tailored Fit Dress Shirt",
+        "slug": "tailored-fit-dress-shirt",
+        "description": "Tailored Fit Dress Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4899,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 37
+    },
+    {
+        "name": "Denim Collared Shirt",
+        "slug": "denim-collared-shirt",
+        "description": "Denim Collared Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4999,
+        "discount_price": 4799,
+        "quantity": 24,
+        "sub_category_id": 37
+    },
+    {
+        "name": "Checkered Smart Shirt",
+        "slug": "checkered-smart-shirt",
+        "description": "Checkered Smart Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 4999,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 37
+    },
+    {
+        "name": "Classic Formal Shirt",
+        "slug": "classic-formal-shirt",
+        "description": "Classic Formal Shirt crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 5099,
+        "discount_price": 4899,
+        "quantity": 26,
+        "sub_category_id": 37
+    },
+    {
+        "name": "Casual Trouser 1",
+        "slug": "casual-trouser-1",
+        "description": "Casual Trouser 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 4899,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 38
+    },
+    {
+        "name": "Casual Trouser 2",
+        "slug": "casual-trouser-2",
+        "description": "Casual Trouser 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 4999,
+        "discount_price": 4799,
+        "quantity": 22,
+        "sub_category_id": 38
+    },
+    {
+        "name": "Casual Trouser 3",
+        "slug": "casual-trouser-3",
+        "description": "Casual Trouser 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 4999,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 38
+    },
+    {
+        "name": "Casual Trouser 4",
+        "slug": "casual-trouser-4",
+        "description": "Casual Trouser 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 5099,
+        "discount_price": 4899,
+        "quantity": 24,
+        "sub_category_id": 38
+    },
+    {
+        "name": "Casual Trouser 5",
+        "slug": "casual-trouser-5",
+        "description": "Casual Trouser 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 5099,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 38
+    },
+    {
+        "name": "Casual Trouser 6",
+        "slug": "casual-trouser-6",
+        "description": "Casual Trouser 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 5199,
+        "discount_price": 4999,
+        "quantity": 26,
+        "sub_category_id": 38
+    },
+    {
+        "name": "Lawn Dress 1",
+        "slug": "lawn-dress-1",
+        "description": "Lawn Dress 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 4999,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 39
+    },
+    {
+        "name": "Lawn Dress 2",
+        "slug": "lawn-dress-2",
+        "description": "Lawn Dress 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 5099,
+        "discount_price": 4899,
+        "quantity": 22,
+        "sub_category_id": 39
+    },
+    {
+        "name": "Lawn Dress 3",
+        "slug": "lawn-dress-3",
+        "description": "Lawn Dress 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 5099,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 39
+    },
+    {
+        "name": "Lawn Dress 4",
+        "slug": "lawn-dress-4",
+        "description": "Lawn Dress 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 5199,
+        "discount_price": 4999,
+        "quantity": 24,
+        "sub_category_id": 39
+    },
+    {
+        "name": "Lawn Dress 5",
+        "slug": "lawn-dress-5",
+        "description": "Lawn Dress 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 5199,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 39
+    },
+    {
+        "name": "Lawn Dress 6",
+        "slug": "lawn-dress-6",
+        "description": "Lawn Dress 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 5299,
+        "discount_price": 5099,
+        "quantity": 26,
+        "sub_category_id": 39
+    },
+    {
+        "name": "Urban Classic Tee",
+        "slug": "urban-classic-tee",
+        "description": "Urban Classic Tee crafted from premium, breathable cotton fabric for unmatched comfort and everyday style.",
+        "price": 5099,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 40
+    },
+    {
+        "name": "Signature Cotton Crew",
+        "slug": "signature-cotton-crew",
+        "description": "Signature Cotton Crew crafted from premium, breathable cotton fabric for unmatched comfort and everyday style.",
+        "price": 5199,
+        "discount_price": 4999,
+        "quantity": 22,
+        "sub_category_id": 40
+    },
+    {
+        "name": "Streetline Graphic Tee",
+        "slug": "streetline-graphic-tee",
+        "description": "Streetline Graphic Tee crafted from premium, breathable cotton fabric for unmatched comfort and everyday style.",
+        "price": 5199,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 40
+    },
+    {
+        "name": "Streetline Graphic Tee",
+        "slug": "streetline-graphic-tee",
+        "description": "Streetline Graphic Tee crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 5299,
+        "discount_price": 5099,
+        "quantity": 24,
+        "sub_category_id": 40
+    },
+    {
+        "name": "Minimalist Round Neck Tee",
+        "slug": "minimalist-round-neck-tee",
+        "description": "Minimalist Round Neck Tee crafted from premium, breathable cotton fabric for unmatched comfort and everyday style.",
+        "price": 5299,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 40
+    },
+    {
+        "name": "Oxford Button-Down",
+        "slug": "oxford-button-down",
+        "description": "Oxford Button-Down crafted from premium materials, designed for comfort and contemporary style.",
+        "price": 5399,
+        "discount_price": 5199,
+        "quantity": 26,
+        "sub_category_id": 40
+    },
+    {
+        "name": "Coat 1",
+        "slug": "coat-1",
+        "description": "Coat 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 5199,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 41
+    },
+    {
+        "name": "Coat 2",
+        "slug": "coat-2",
+        "description": "Coat 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 5299,
+        "discount_price": 5099,
+        "quantity": 22,
+        "sub_category_id": 41
+    },
+    {
+        "name": "Coat 3",
+        "slug": "coat-3",
+        "description": "Coat 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 5299,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 41
+    },
+    {
+        "name": "Coat 4",
+        "slug": "coat-4",
+        "description": "Coat 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 5399,
+        "discount_price": 5199,
+        "quantity": 24,
+        "sub_category_id": 41
+    },
+    {
+        "name": "Coat 5",
+        "slug": "coat-5",
+        "description": "Coat 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 5399,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 41
+    },
+    {
+        "name": "Coat 6",
+        "slug": "coat-6",
+        "description": "Coat 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 5499,
+        "discount_price": 5299,
+        "quantity": 26,
+        "sub_category_id": 41
+    },
+    {
+        "name": "Jacket 1",
+        "slug": "jacket-1",
+        "description": "Jacket 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 5299,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 42
+    },
+    {
+        "name": "Jacket 2",
+        "slug": "jacket-2",
+        "description": "Jacket 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 5399,
+        "discount_price": 5199,
+        "quantity": 22,
+        "sub_category_id": 42
+    },
+    {
+        "name": "Jacket 3",
+        "slug": "jacket-3",
+        "description": "Jacket 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 5399,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 42
+    },
+    {
+        "name": "Jacket 4",
+        "slug": "jacket-4",
+        "description": "Jacket 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 5499,
+        "discount_price": 5299,
+        "quantity": 24,
+        "sub_category_id": 42
+    },
+    {
+        "name": "Jacket 5",
+        "slug": "jacket-5",
+        "description": "Jacket 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 5499,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 42
+    },
+    {
+        "name": "Jacket 6",
+        "slug": "jacket-6",
+        "description": "Jacket 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 5599,
+        "discount_price": 5399,
+        "quantity": 26,
+        "sub_category_id": 42
+    },
+    {
+        "name": "Hoodie 1",
+        "slug": "hoodie-1",
+        "description": "Hoodie 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 5399,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 43
+    },
+    {
+        "name": "Hoodie 2",
+        "slug": "hoodie-2",
+        "description": "Hoodie 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 5499,
+        "discount_price": 5299,
+        "quantity": 22,
+        "sub_category_id": 43
+    },
+    {
+        "name": "Hoodie 3",
+        "slug": "hoodie-3",
+        "description": "Hoodie 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 5499,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 43
+    },
+    {
+        "name": "Hoodie 4",
+        "slug": "hoodie-4",
+        "description": "Hoodie 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 5599,
+        "discount_price": 5399,
+        "quantity": 24,
+        "sub_category_id": 43
+    },
+    {
+        "name": "Hoodie 5",
+        "slug": "hoodie-5",
+        "description": "Hoodie 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 5599,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 43
+    },
+    {
+        "name": "Hoodie 6",
+        "slug": "hoodie-6",
+        "description": "Hoodie 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 5699,
+        "discount_price": 5499,
+        "quantity": 26,
+        "sub_category_id": 43
+    },
+    {
+        "name": "Cardigan 1",
+        "slug": "cardigan-1",
+        "description": "Cardigan 1 made from premium materials, ideal for modern fashion needs.",
+        "price": 5499,
+        "discount_price": null,
+        "quantity": 21,
+        "sub_category_id": 44
+    },
+    {
+        "name": "Cardigan 2",
+        "slug": "cardigan-2",
+        "description": "Cardigan 2 made from premium materials, ideal for modern fashion needs.",
+        "price": 5599,
+        "discount_price": 5399,
+        "quantity": 22,
+        "sub_category_id": 44
+    },
+    {
+        "name": "Cardigan 3",
+        "slug": "cardigan-3",
+        "description": "Cardigan 3 made from premium materials, ideal for modern fashion needs.",
+        "price": 5599,
+        "discount_price": null,
+        "quantity": 23,
+        "sub_category_id": 44
+    },
+    {
+        "name": "Cardigan 4",
+        "slug": "cardigan-4",
+        "description": "Cardigan 4 made from premium materials, ideal for modern fashion needs.",
+        "price": 5699,
+        "discount_price": 5499,
+        "quantity": 24,
+        "sub_category_id": 44
+    },
+    {
+        "name": "Cardigan 5",
+        "slug": "cardigan-5",
+        "description": "Cardigan 5 made from premium materials, ideal for modern fashion needs.",
+        "price": 5699,
+        "discount_price": null,
+        "quantity": 25,
+        "sub_category_id": 44
+    },
+    {
+        "name": "Cardigan 6",
+        "slug": "cardigan-6",
+        "description": "Cardigan 6 made from premium materials, ideal for modern fashion needs.",
+        "price": 5799,
+        "discount_price": 5599,
+        "quantity": 26,
+        "sub_category_id": 44
+    }
+]

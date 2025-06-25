@@ -21,4 +21,3 @@ document.getElementById("categoryNav").onmouseleave = function () {
 };
 
 // for profile ajax
-
