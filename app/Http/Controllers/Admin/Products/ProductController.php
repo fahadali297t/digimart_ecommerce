@@ -6,7 +6,10 @@ use App\Http\Controllers\Admin\Controller;
 use App\Models\Category;
 use App\Models\Products\Product;
 use App\Models\SubCategory;
+
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
 
@@ -252,5 +255,31 @@ class ProductController extends Controller
         $product  = Product::with('sub_category.category', 'product_image')->simplePaginate(20);
 
         return view('shop', ['product' => $product]);
+    }
+    public function addCart(Request $request)
+    {
+        $id = $request->pid;
+        $product  = Product::with('product_image')->find($id);
+        $pro = collect([
+            'name' => $product->name,
+            'price' => $product->price,
+            'discount_price' => $product->discount_price,
+            'coverImage' => $product->product_image->coverImage,
+        ]);
+
+        $cart =  session('cart', []);
+
+        $cart[] = $pro;
+        session()->put('cart', $cart);
+
+        return session('cart');
+        // =========================
+        // if (Auth::check()) {
+
+        //     return Auth::user()->id;
+        // } else {
+
+        //     dd($cart);
+        // }
     }
 }

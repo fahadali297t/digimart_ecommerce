@@ -60,10 +60,15 @@
                         <a href=""
                             class="text-lg flex justify-center items-center text-black border-2 border-black hover:cursor-pointer bg-white w-1/2 py-3">Add
                             to Wishlist</a>
-                        <a href=""
-                            class="text-lg flex justify-center items-center text-white border-2 border-black hover:cursor-pointer bg-black w-1/2 py-3">Add
-                            to
-                            cart</a>
+                        <form action="{{ route('addcart') }}" method="post"
+                            class="text-lg flex justify-center items-center text-white border-2 border-black hover:cursor-pointer bg-black w-1/2 py-3">
+
+                            @csrf
+                            <input type="hidden" name="pid" value="{{ $product->id }}">
+                            <a href="{{ route('addcart') }}" onclick="addtoCart(event)" class="">Add
+                                to
+                                cart</a>
+                        </form>
                     </div>
 
 

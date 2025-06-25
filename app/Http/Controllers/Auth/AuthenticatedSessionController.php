@@ -27,7 +27,8 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
-
+        $cart = [];
+        session()->put('cart', $cart);
         return redirect()->intended(route('dashboard', absolute: false));
     }
 

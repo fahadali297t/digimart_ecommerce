@@ -21,3 +21,8 @@ document.getElementById("categoryNav").onmouseleave = function () {
 };
 
 // for profile ajax
+function addtoCart(event) {
+    alert("Product Successfully Added to cart");
+    event.preventDefault();
+    event.target.closest("form").submit();
+}

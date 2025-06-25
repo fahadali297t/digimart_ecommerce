@@ -18,9 +18,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/product/{slug}', [ProductController::class, 'singleProduct']);
+Route::get('/product/{slug}', [ProductController::class, 'singleProduct'])->name('product.view');
 
 Route::get('/products', [ProductController::class, 'jsonlist']);
+Route::post('/addTocart', [ProductController::class, 'addCart'])->name('addcart');
 Route::get('/shop', [ProductController::class, 'shop'])->name('shop');
 
 require __DIR__ . '/auth.php';

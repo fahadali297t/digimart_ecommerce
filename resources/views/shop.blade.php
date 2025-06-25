@@ -19,26 +19,9 @@
         {{-- Main shop --}}
         <div class="container mt-10 px-5 py-5 mx-auto ">
             <div class="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5 lg:grid-cols-4">
+                {{-- products --}}
                 @foreach ($product as $pro)
-                    <div class="w-full h-full overflow-hidden flex-col flex justify-start items-center">
-                        <div class="w-full h-3/4">
-                            <img class="w-full h-full object-cover object-center"
-                                src="{{ asset('storage/' . $pro->product_image->coverImage) }}" srcset="">
-                        </div>
-                        <div class="mt-5 flex flex-col justify-center items-center">
-                            {{-- su_category --}}
-                            <p class="text-sm text-black/60">{{ $pro->sub_category->name }}</p>
-                            {{-- Title --}}
-                            <h1 class="text-black  text-xl  font-semibold">{{ $pro->name }}</h1>
-                            {{-- rating --}}
-                            <x-review />
-                            {{-- Price --}}
-                            <div class="flex justify-center gap-1 items-center">
-                                <p class="text-black  font-semibold">PKR. {{ $pro->price }}</p>
-                                <p class="text-black/60 font-semibold line-through text-xs">{{ $pro->discount_price }}</p>
-                            </div>
-                        </div>
-                    </div>
+                    <x-productcard :pro=$pro />
                 @endforeach
             </div>
             <div class="w-full mt-10">
