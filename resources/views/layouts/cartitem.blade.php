@@ -77,8 +77,14 @@
          <div class="mt-6 h-full flex flex-col justify-between items-end bg-gray-100 p-4 rounded">
              <p>Grand Total: </p>
              <p id="grandTotal" class="text-xl font-bold">Rs. {{ $grandTotal }}</p>
-             <button
-                 class="mt-3 md:mt-0 bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition">Checkout</button>
+             <form action="{{ route('cart.checkout') }}" method="post">
+                 @csrf
+                 <input type="hidden" name="total" value="{{ $grandTotal }}" id="total_hidden">
+                 <button class="mt-3 md:mt-0 bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 transition"
+                     type="submit">
+                     Checkout
+                 </button>
+             </form>
          </div>
      </div>
  @else

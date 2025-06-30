@@ -16,7 +16,10 @@ class CartController extends Controller
         if ($request->inc) {
             $cart[$request->id]['product_quantity'] += 1;
         } else {
-            $cart[$request->id]['product_quantity'] -= 1;
+            if ($cart[$request->id]['product_quantity'] > 1) {
+                # code...
+                $cart[$request->id]['product_quantity'] -= 1;
+            }
         }
 
 
@@ -27,5 +30,13 @@ class CartController extends Controller
             'cart' => $cart,
 
         ]);
+    }
+
+    // checkout 
+
+    public function checkout(Request $request)
+    {
+
+        dd($request->all());
     }
 }

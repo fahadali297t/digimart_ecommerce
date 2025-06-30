@@ -108,6 +108,7 @@ function inc(event, id, inc) {
 
             document.getElementById("counter_" + id).innerText =
                 data.cart[id].product_quantity;
+            document.getElementById("total_hidden").value = totalprice;
         })
         .catch((error) => console.error("Error:", error));
 }
@@ -147,6 +148,9 @@ function desc(event, id, desc) {
 
             document.getElementById("counter_" + id).innerText =
                 data.cart[id].product_quantity;
+            document.getElementById("total_hidden").value = totalprice;
+
+            
         })
         .catch((error) => console.error("Error:", error));
 }
