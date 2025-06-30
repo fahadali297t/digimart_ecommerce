@@ -21,8 +21,12 @@ Route::middleware('auth')->group(function () {
 Route::get('/product/{slug}', [ProductController::class, 'singleProduct'])->name('product.view');
 
 Route::get('/products', [ProductController::class, 'jsonlist']);
+Route::get('/cart', [ProductController::class, 'cart'])->name('cart');
 Route::post('/addTocart', [ProductController::class, 'addCart'])->name('addcart');
+Route::post('/update-cart', [ProductController::class, 'updateCart'])->name('cart.update');
+Route::post('/delete-item', [ProductController::class, 'deleteItem'])->name('cart.update');
 Route::get('/shop', [ProductController::class, 'shop'])->name('shop');
 
 require __DIR__ . '/auth.php';
 require __DIR__ . '/admin.php';
+require __DIR__ . '/cart.php';

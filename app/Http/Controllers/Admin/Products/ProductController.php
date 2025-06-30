@@ -12,6 +12,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
+use Psy\CodeCleaner\ReturnTypePass;
+
+use function Pest\Laravel\json;
 
 class ProductController extends Controller
 {
@@ -246,6 +249,9 @@ class ProductController extends Controller
     public function singleProduct(Request $request)
     {
         $product  = Product::with('sub_category.category', 'product_image')->where('slug', $request->slug)->first();
+        if (!$product) {
+            abort(404);
+        }
 
         return view('singleProduct', ['product' => $product]);
     }
@@ -259,27 +265,45 @@ class ProductController extends Controller
     public function addCart(Request $request)
     {
         $id = $request->pid;
-        $product  = Product::with('product_image')->find($id);
-        $pro = collect([
+        $product  = Product::with('sub_category.category', 'product_image')->find($id);
+
+        $pro = [
+            'product_quantity' => 1,
+            'image' => $product->product_image->coverImage,
+            'product_id' => $product->id,
             'name' => $product->name,
             'price' => $product->price,
-            'discount_price' => $product->discount_price,
-            'coverImage' => $product->product_image->coverImage,
-        ]);
+            'category' => $product->sub_category->category->name,
+        ];
+
 
         $cart =  session('cart', []);
 
         $cart[] = $pro;
         session()->put('cart', $cart);
 
-        return session('cart');
-        // =========================
-        // if (Auth::check()) {
 
-        //     return Auth::user()->id;
-        // } else {
 
-        //     dd($cart);
-        // }
+        return redirect()->route('cart');
+    }
+    // =============================
+    public function cart()
+    {
+        // dd(session('cart'));
+        // return session('cart');
+
+        // return $total;
+        return view('cart', ['product' => session('cart')]);
+    }
+
+    
+    public function deleteItem(Request $request)
+    {
+        $cart = session('cart');
+        unset(
+            $cart[$request->id]
+        );
+        session()->put('cart', $cart);
+        return redirect()->route('cart');
     }
 }

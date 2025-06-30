@@ -1,0 +1,13 @@
+<?php
+
+use App\Http\Controllers\Admin\Products\ProductController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
+
+
+
+Route::post('update-cart-price', [CartController::class, 'quantity_update'])->name('cart.price.update');
+
+require __DIR__ . '/auth.php';
+require __DIR__ . '/admin.php';
