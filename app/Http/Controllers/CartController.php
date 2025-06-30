@@ -36,7 +36,12 @@ class CartController extends Controller
 
     public function checkout(Request $request)
     {
-
-        dd($request->all());
+        $cart = session('cart', []);
+        // dd($request->all());
+        // dd($cart);
+        if (!$request->total) {
+            abort(404);
+        }
+        return view('checkout', ['total' => $request->total, 'cart', $cart]);
     }
 }
