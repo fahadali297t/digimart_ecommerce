@@ -28,6 +28,3 @@
 @endsection
 
 
-<script>
-    
-</script>

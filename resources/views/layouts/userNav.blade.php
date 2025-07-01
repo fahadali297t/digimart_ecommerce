@@ -64,7 +64,7 @@
                 Sign in
             </a>
         @endif
-        <a href="" class=" hover:cursor-pointer font-normal ">
+        <a href="{{ route('cart') }}" class=" hover:cursor-pointer font-normal ">
             <img src="{{ asset('assets/dist/img/icons/cart.svg') }}" alt="" srcset="">
         </a>
 
@@ -131,13 +131,26 @@
 </nav>
 
 <div class="w-full px-5 py-5 flex justify-around lg:hidden items-center bg-white  fixed bottom-0 left-0">
-    <a href="">
-        <img src="{{ asset('assets/dist/img/icons/search.svg') }}" alt="" srcset="">
-    </a>
     <a href ="{{ route('welcome') }}">
         <img src="{{ asset('assets/dist/img/icons/home.svg') }}" alt="" srcset="">
     </a>
+    <a href="{{ route('shop') }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-building-store">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 21l18 0" />
+            <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+            <path d="M5 21l0 -10.15" />
+            <path d="M19 21l0 -10.15" />
+            <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+        </svg>
+    </a>
+
     <a href="">
+        <img src="{{ asset('assets/dist/img/icons/search.svg') }}" alt="" srcset="">
+    </a>
+    <a href="{{ route('cart') }}">
         <img src="{{ asset('assets/dist/img/icons/cart.svg') }}" alt="" srcset="">
     </a>
     <a href="{{ route('dashboard') }}">

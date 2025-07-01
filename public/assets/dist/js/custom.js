@@ -105,6 +105,7 @@ function inc(event, id, inc) {
 
             document.getElementById("grandTotal").innerText =
                 "Rs. " + totalprice;
+            document.getElementById("subtotal").innerText = "Rs. " + totalprice;
 
             document.getElementById("counter_" + id).innerText =
                 data.cart[id].product_quantity;
@@ -145,12 +146,12 @@ function desc(event, id, desc) {
 
             document.getElementById("grandTotal").innerText =
                 "Rs. " + totalprice;
+            document.getElementById("subtotal").innerText = "Rs. " + totalprice;
 
             document.getElementById("counter_" + id).innerText =
                 data.cart[id].product_quantity;
             document.getElementById("total_hidden").value = totalprice;
-
-            
+            // subtotal
         })
         .catch((error) => console.error("Error:", error));
 }
