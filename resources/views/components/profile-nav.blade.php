@@ -1,4 +1,4 @@
-<div class="navigation col-span-12   lg:col-span-4 flex flex-col justify-center items-center gap-3">
+<div class="navigation max-h-[40vh]  col-span-12   lg:col-span-4 flex flex-col justify-center items-center gap-3">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 size-full">
         <a href="{{ route('dashboard') }}"
             class="ajax-link text-lg w-3/4 flex justify-start gap-3 items-center rounded-lg  px-3 py-5">

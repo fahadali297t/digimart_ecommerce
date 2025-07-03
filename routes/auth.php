@@ -60,4 +60,5 @@ Route::middleware('auth')->group(function () {
         ->name('logout');
 
     Route::get('/orders', [OrderController::class, 'list'])->name('order.list');
+    Route::get('/orders/{id}', [OrderController::class, 'singleOrder'])->name('order.view');
 });

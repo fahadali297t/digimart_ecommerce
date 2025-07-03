@@ -14,7 +14,7 @@ class OrderController extends Controller
     {
 
 
-        $product =  (json_encode($request->product));
+        $product =  ($request->product);
 
         $order = new Order();
         $order->user_id = $request->user_id;
@@ -29,8 +29,16 @@ class OrderController extends Controller
 
         $orderItem = new OrderItem();
         $orderItem->order_id = $order->id;
-        $orderItem->products = $product;
         $orderItem->save();
+
+        foreach ($product as $key => $value) {
+            $orderItem->products()->attach([
+                $key => ['quantity' => $value],
+            ]);
+            $product = Product::find($key);
+            $product->quantity -=  $value;
+            $product->save();
+        }
 
         // empty the cart
         $cart = session('cart', []);
@@ -39,6 +47,7 @@ class OrderController extends Controller
 
         if ($request->paymentMethod === 'card') {
         } else if ($request->paymentMethod === 'cod') {
+
             return view('order_fullfil', ['id' => $order->id]);
         }
     }
@@ -46,23 +55,11 @@ class OrderController extends Controller
     public function list()
     {
         $id = Auth::user()->id;
-        $orders =  Order::where('user_id', $id)->with('order_item')->get();
-        // $orderItem = $orders->order_item;
-        // return $orderItem;
-        $p = [];
-        foreach ($orders as  $value) {
-            foreach ($value->order_item as $item) {
-                $p[] =   json_decode($item->products, true);
-            }
-        }
-        // dd($p);
-        $pid = [];
-        foreach ($p as $key => $value) {
-            foreach ($value as $id => $quantity) {
-                $pid[] = $id;
-            }
-        }
-        $products =  Product::whereIn('id', $pid)->get();
-        return view('orders', ['order_item' => $orders, 'product' => $p, 'products' => $products]);
+        $orders =  Order::where('user_id', $id)->with('order_item.products')->get();
+        return view('orders', ['order_item' => $orders,]);
+    }
+    public function singleOrder($id)
+    {
+        return Order::with('order_item.products')->find($id);
     }
 }

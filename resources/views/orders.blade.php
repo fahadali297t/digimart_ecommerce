@@ -51,9 +51,9 @@
          <div class="container px-5 md:px-0 m-auto mt-10 ">
              <div class="grid grid-cols-12">
                  <x-profile-nav />
-                 <div id="content" class="col-span-12 lg:col-span-8 content">
+                 <div id="content" class="col-span-12 lg:max-h-[90vh]  lg:overflow-scroll  lg:col-span-8 content">
                      @forelse ($order_item as $item)
-                         <div class="bg-slate-200 rounded-lg shadow p-5">
+                         <div class="bg-slate-200 mb-5 rounded-lg shadow p-5">
                              <div class="flex justify-between items-center mb-4">
                                  <h2 class="text-lg font-semibold text-indigo-600">Order #{{ $item->id }}</h2>
                                  <span
@@ -76,15 +76,17 @@
                                  <h3 class="font-semibold mb-2">Products:</h3>
                                  <ul class="text-sm space-y-1">
 
-                                     @forelse ($products as $key => $item)
-                                         <li class="flex flex-col justify-center items-start  border-b pb-1">
-                                             <div>
-                                                 <span class="">Product Name:</span> <span>{{ $item->name }}</span>
+                                     @forelse ($item->order_item as $i)
+                                         @foreach ($i->products as $product)
+                                             <li class="flex flex-col justify-center items-start  border-b pb-1">
+                                                 <div>
+                                                     <span class="">Product Name:</span>
+                                                     <span>{{ $product->name }}</span> --
+                                                     <span>Qty: {{ $product->pivot->quantity }}</span>
 
-                                             </div>
-                                             <span>Qty: {{ $product[$key][$item->id] }}</span>
-                                             <span>Price: {{ $item->price }}</span>
-                                         </li>
+                                                 </div>
+                                             </li>
+                                         @endforeach
                                      @empty
                                      @endforelse
 
@@ -92,7 +94,8 @@
                              </div>
 
                              <div class="mt-4 text-start">
-                                 <a href="#" class="text-indigo-600 text-sm font-medium hover:underline">View
+                                 <a href="{{ route('order.view', $item->id) }}"
+                                     class="text-indigo-600 text-sm font-medium hover:underline">View
                                      Details</a>
                              </div>
                          </div>
