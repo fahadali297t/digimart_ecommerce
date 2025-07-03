@@ -42,6 +42,10 @@ class CartController extends Controller
         if (!$request->total) {
             abort(404);
         }
-        return view('checkout', ['total' => $request->total, 'cart', $cart]);
+        $p_id = [];
+        foreach ($cart as  $value) {
+            $p_id[] = $value['product_id'];
+        }
+        return view('checkout', ['total' => $request->total, 'cart' => $cart]);
     }
 }

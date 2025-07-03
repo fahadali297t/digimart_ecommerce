@@ -19,6 +19,7 @@
 
     {{-- js --}}
     <script src="{{ asset('assets/dist/js/custom.js') }}"></script>
+    @yield('scripts');
 </body>
 
 </html>

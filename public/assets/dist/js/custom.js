@@ -155,3 +155,16 @@ function desc(event, id, desc) {
         })
         .catch((error) => console.error("Error:", error));
 }
+
+document.querySelectorAll('input[name="paymentMethod"]').forEach((elem) => {
+    elem.addEventListener("change", function (event) {
+        // console.log(`Selected: ${event.target.value}`);
+        if (event.target.value === "card") {
+            document.getElementById("card_label").classList.add("selected");
+            document.getElementById("cod_label").classList.remove("selected");
+        } else {
+            document.getElementById("cod_label").classList.add("selected");
+            document.getElementById("card_label").classList.remove("selected");
+        }
+    });
+});
