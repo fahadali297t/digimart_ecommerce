@@ -5,7 +5,8 @@
             <img src="{{ asset('assets/dist/img/icons/home1.svg') }}" alt="" srcset="">
             Dashboard
         </a>
-        <a href="" class="ajax-link text-lg w-3/4 flex justify-start gap-3 items-center rounded-lg  px-3 py-5">
+        <a href="{{ route('order.list') }}"
+            class="ajax-link text-lg w-3/4 flex justify-start gap-3 items-center rounded-lg  px-3 py-5">
             <img src="{{ asset('assets/dist/img/icons/order.svg') }}" alt="" srcset="">
             Order
         </a>
