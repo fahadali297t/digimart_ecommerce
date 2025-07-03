@@ -124,8 +124,7 @@
                                 <span class="font-semibold text-gray-800">Rs.
                                     {{ $item['product_quantity'] * $item['price'] }}</span>
                             </div>
-                            <input type="hidden" name="product-id[]" value="{{ $item['product_id'] }}">
-                            <input type="hidden" name="product-{{ $item['product_id'] }}-quantity"
+                            <input type="hidden" name="product[{{ $item['product_id'] }}]"
                                 value="{{ $item['product_quantity'] }}">
                             @php
 

@@ -31,7 +31,7 @@
             </a>
 
             <div class="mt-6 text-gray-400 text-xs">
-                <p>Order ID: #12345678</p>
+                <p>Order ID: #{{ $id }}</p>
                 <p class="mt-1">You’ll receive an email confirmation shortly.</p>
             </div>
         </div>
