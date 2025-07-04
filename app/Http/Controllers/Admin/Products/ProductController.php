@@ -255,7 +255,7 @@ class ProductController extends Controller
 
         return view('singleProduct', ['product' => $product]);
     }
-    // view single Product
+    // view All Products
     public function shop()
     {
         $product  = Product::with('sub_category.category', 'product_image')->simplePaginate(20);
@@ -270,7 +270,7 @@ class ProductController extends Controller
         if ($product->isEmpty()) {
             abort(404);
         }
-        return view('shop', ['product' => $product]);
+        return view('shop', ['product' => $product, 'name' => $name]);
     }
     public function shop_by_subcategory($name)
     {
@@ -280,7 +280,7 @@ class ProductController extends Controller
         if ($product->isEmpty()) {
             abort(404);
         }
-        return view('shop', ['product' => $product]);
+        return view('shop', ['product' => $product, 'name' => $name]);
     }
 
     // ==================================
@@ -294,7 +294,7 @@ class ProductController extends Controller
             'image' => $product->product_image->coverImage,
             'product_id' => $product->id,
             'name' => $product->name,
-            'price' => $product->price,
+            'price' => $product->discount_price ?  $product->discount_price : $product->price,
             'category' => $product->sub_category->category->name,
         ];
 

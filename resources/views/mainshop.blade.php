@@ -9,7 +9,7 @@
         <div class="size-full page_top h-[40vh]">
             <div class="bg-black/60 flex flex-col justify-center items-center  size-full">
                 <span class="font-satisfy text-white  text-2xl">explore</span>
-                <h1 class="text-6xl text-white font-bold">{{ $name }}</h1>
+                <h1 class="text-6xl text-white font-bold">Shop</h1>
             </div>
         </div>
         {{-- Filter --}}

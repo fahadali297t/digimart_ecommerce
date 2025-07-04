@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\Products\ProductController;
 use App\Http\Controllers\MailController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,11 +27,11 @@ Route::get('/cart', [ProductController::class, 'cart'])->name('cart');
 Route::post('/addTocart', [ProductController::class, 'addCart'])->name('addcart');
 Route::post('/update-cart', [ProductController::class, 'updateCart'])->name('cart.update');
 Route::post('/delete-item', [ProductController::class, 'deleteItem'])->name('cart.update');
-Route::get('/shop', [ProductController::class, 'shop'])->name('shop');
+Route::get('/shop', [ProductsController::class, 'shop'])->name('shop');
 Route::get('/shop/category/{name}', [ProductController::class, 'shop_by_category'])->name('shop.category');
 Route::get('/shop/{name}', [ProductController::class, 'shop_by_subcategory'])->name('shop.subcategory');
 
-Route::get('/send' , [MailController::class , 'send']);
+Route::get('/send', [MailController::class, 'send']);
 
 require __DIR__ . '/auth.php';
 require __DIR__ . '/admin.php';

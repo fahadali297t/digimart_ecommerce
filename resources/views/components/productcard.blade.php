@@ -1,5 +1,3 @@
-
-
 <a href="{{ route('product.view', $pro->slug) }}"
     class="w-full h-full overflow-hidden flex-col flex justify-start items-center">
     <div class="w-full h-3/4">
@@ -15,8 +13,13 @@
         <x-review />
         {{-- Price --}}
         <div class="flex justify-center gap-1 items-center">
-            <p class="text-black  font-semibold">PKR. {{ $pro->price }}</p>
-            <p class="text-black/60 font-semibold line-through text-xs">{{ $pro->discount_price }}</p>
+            @if ($pro->discount_price)
+                <p class="text-black  font-semibold">PKR. {{ $pro->discount_price }}</p>
+                <p class="text-black/60 font-semibold line-through text-xs">{{ $pro->price }}</p>
+            @else
+                <p class="text-black  font-semibold">PKR. {{ $pro->price }}</p>
+                <p class="text-black/60 font-semibold line-through text-xs">{{ $pro->discount_price }}</p>
+            @endif
         </div>
     </div>
 </a>
