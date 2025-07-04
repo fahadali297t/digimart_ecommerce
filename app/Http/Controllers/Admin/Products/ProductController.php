@@ -262,6 +262,28 @@ class ProductController extends Controller
 
         return view('shop', ['product' => $product]);
     }
+    public function shop_by_category($name)
+    {
+        $product  = Product::whereHas('sub_category.category', function ($query) use ($name) {
+            $query->where('name', $name);
+        })->with('sub_category.category', 'product_image')->simplePaginate(20);
+        if ($product->isEmpty()) {
+            abort(404);
+        }
+        return view('shop', ['product' => $product]);
+    }
+    public function shop_by_subcategory($name)
+    {
+        $product  = Product::whereHas('sub_category', function ($query) use ($name) {
+            $query->where('name', $name);
+        })->with('sub_category.category', 'product_image')->simplePaginate(20);
+        if ($product->isEmpty()) {
+            abort(404);
+        }
+        return view('shop', ['product' => $product]);
+    }
+
+    // ==================================
     public function addCart(Request $request)
     {
         $id = $request->pid;
@@ -296,7 +318,7 @@ class ProductController extends Controller
         return view('cart', ['product' => session('cart')]);
     }
 
-    
+
     public function deleteItem(Request $request)
     {
         $cart = session('cart');

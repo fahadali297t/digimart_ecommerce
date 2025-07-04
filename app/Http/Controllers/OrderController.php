@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OrderConfirmation;
 use App\Models\Order;
 use App\Models\OrderItem;
 use App\Models\Products\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -47,6 +49,15 @@ class OrderController extends Controller
 
         if ($request->paymentMethod === 'card') {
         } else if ($request->paymentMethod === 'cod') {
+
+            $to = $request->email;
+            $msg = "<p>Thank you for your order!</p>
+                    <p>Your order ID is <strong>{$order->id}</strong></p>
+                    <p>Total:{$request->total}/-</p>";
+
+            $sub = 'Order Confirmed';
+
+            Mail::to($to)->queue(new OrderConfirmation($msg, $sub));
 
             return view('order_fullfil', ['id' => $order->id]);
         }

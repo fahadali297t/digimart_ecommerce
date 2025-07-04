@@ -19,10 +19,11 @@
 
                         @forelse ($categories as $cat)
                             <div class="flex flex-col justify-start items-start px-5 pb-5 gap-2">
-                                <a href="" class="text-lg font-semibold">{{ $cat->name }}</a>
+                                <a href="{{ route('shop.category', $cat->name) }}"
+                                    class="text-lg font-semibold">{{ $cat->name }}</a>
                                 <div class="text-start flex flex-col ">
                                     @forelse ($cat->sub_category as $item)
-                                        <a href=""
+                                        <a href="{{ route('shop.subcategory', $item->name) }}"
                                             class="hover:bg-slate-200 text-sm transition ease-in duration-200 py-2 px-2 rounded-md">
                                             {{ $item->name }}
                                         </a>
