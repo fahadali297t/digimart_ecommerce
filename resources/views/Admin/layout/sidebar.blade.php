@@ -6,7 +6,7 @@
         </button>
         <h1 class="navbar-brand navbar-brand-autodark">
             <a href=".">
-                <img src="./static/logo.svg" width="110" height="32" alt="Tabler" class="navbar-brand-image">
+                <h1>Chawkbazar</h1>
             </a>
         </h1>
         <div class="navbar-nav flex-row d-lg-none">
@@ -293,6 +293,48 @@
                                 </a>
                                 <a class="dropdown-item" href="{{ route('admin.subcategory.add') }}">
                                     Add New Sub Category
+                                </a>
+
+                            </div>
+                        </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
+                        data-bs-auto-close="false" role="button" aria-expanded="false">
+                        <span
+                            class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-category">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 4h6v6h-6z" />
+                                <path d="M14 4h6v6h-6z" />
+                                <path d="M4 14h6v6h-6z" />
+                                <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                            </svg>
+                        </span>
+                        <span class="nav-link-title">
+                            Orders
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-columns">
+                            <div class="dropdown-menu-column">
+                                <a class="dropdown-item" href="{{ route('admin.order.list') }}">
+                                    All Orders
+                                </a>
+                                <a class="dropdown-item" href="{{ route('admin.order.paid-list') }}">
+                                    Paid Orders
+                                </a>
+                                <a class="dropdown-item" href="{{ route('admin.order.unpaid-list') }}">
+                                    Pending Payment
+                                </a>
+                                <a class="dropdown-item" href="{{ route('admin.order.shipped-list') }}">
+                                    Completed Orders
+                                </a>
+                                <a class="dropdown-item" href="{{ route('admin.order.cancelled-list') }}">
+                                    Cancelled Orders
                                 </a>
 
                             </div>

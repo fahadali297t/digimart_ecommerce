@@ -168,3 +168,27 @@ document.querySelectorAll('input[name="paymentMethod"]').forEach((elem) => {
         }
     });
 });
+
+// for updating the status of payment:
+
+function updateOrder(id, val) {
+    fetch("/admin/orders/update", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRF-TOKEN": csrfToken,
+        },
+        body: JSON.stringify({
+            id: id,
+            val: val,
+        }),
+    })
+        .then((res) => res.json())
+        .then((data) => {
+            if (data == "Shipped") {
+            } else {
+                document.getElementById("payment_status").innerText = "Paid";
+            }
+        })
+        .catch((error) => console.error("Error:", error));
+}

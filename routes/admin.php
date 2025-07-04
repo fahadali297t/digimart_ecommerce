@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Admin\Auth\RegisteredUserController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\OrderController;
 use App\Http\Controllers\Admin\Products\ProductController;
 use App\Http\Controllers\Admin\SubCategoryController;
 use Illuminate\Support\Facades\Route;
@@ -54,6 +55,19 @@ Route::middleware('auth:admin')
         Route::get('/product/edit/{slug}', [ProductController::class, 'edit'])->name('product.edit');
         Route::post('/product/edit', [ProductController::class, 'submit_edit'])->name('product.update');
         Route::delete('/product/delete', [ProductController::class, 'delete'])->name('product.delete');
+
+        // Routes for order handling
+        Route::get('/orders', [OrderController::class, 'list'])->name('order.list');
+        Route::get('/paid-orders', [OrderController::class, 'paid_list'])->name('order.paid-list');
+        Route::get('/unpaid-orders', [OrderController::class, 'unpaid_list'])->name('order.unpaid-list');
+        Route::get('/shipped-list', [OrderController::class, 'shipped_list'])->name('order.shipped-list');
+        Route::get('/cancelled-list', [OrderController::class, 'cancelled_list'])->name('order.cancelled-list');
+
+
+        Route::get('/orders/{id}', [OrderController::class, 'update'])->name('order.update');
+        Route::post('/orders/update', [OrderController::class, 'update_store'])->name('order.update.store');
+
+
 
 
 

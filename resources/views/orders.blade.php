@@ -57,7 +57,7 @@
                              <div class="flex justify-between items-center mb-4">
                                  <h2 class="text-lg font-semibold text-indigo-600">Order #{{ $item->id }}</h2>
                                  <span
-                                     class="text-sm bg-yellow-200 text-yellow-800 px-3 py-1 rounded-full">{{ $item->shipment_status === '1' ? 'Shipped' : 'Processing' }}</span>
+                                     class="text-sm {{ $item->shipment_status === 'Shipped' ? 'bg-green-200 text-green-800' : 'bg-yellow-200 text-yellow-800' }}  px-3 py-1 rounded-full">{{ $item->shipment_status ? $item->shipment_status : 'Processing' }}</span>
                              </div>
 
                              <p class="text-sm text-gray-500 mb-2">Placed on: {{ $item->created_at }}</p>
