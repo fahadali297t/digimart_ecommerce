@@ -2,7 +2,7 @@
     $categories = App\Models\Category::with('sub_category')->paginate(6);
 @endphp
 
-<nav class="w-full mt-5 lg:mt-0 px-5 sticky bg-white top-0 left-0  flex justify-between items-center">
+<nav class="w-full mt-5 lg:mt-0 px-5 z-50 sticky bg-white top-0 left-0  flex justify-between items-center">
     <div class="flex justify-between items-center gap-10">
         <h3 class="text-2xl font-semibold ">Chawkbazar</h3>
         <div class=" hidden lg:flex justify-center items-center  gap-10">

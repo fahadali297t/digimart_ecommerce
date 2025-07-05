@@ -11,10 +11,6 @@
     <link rel="shortcut icon" href="{{ asset('assets/dist/img/logo.png') }}" type="image/x-icon">
     <!-- CSS files -->
     <link href="{{ asset('assets/dist/css/tabler.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/dist/css/tabler-flags.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/dist/css/tabler-payments.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/dist/css/tabler-vendors.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/dist/css/demo.min.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('assets/dist/css/custom.css') }}">
     <style>
         @import url('https://rsms.me/inter/inter.css');
@@ -33,12 +29,10 @@
 </head>
 
 <body>
-    <script src="./dist/js/demo-theme.min.js?1692870487"></script>
 
 
     @yield('content')
     <script src="{{ asset('assets/dist/js/tabler.min.js') }}" defer></script>
-    <script src="{{ asset('assets/dist/js/demo.min.js') }}" defer></script>
     <script src="https://kit.fontawesome.com/0e26b3244d.js" crossorigin="anonymous"></script>
     <script src="{{ asset('assets/dist/js/custom.js ') }}"></script>
 

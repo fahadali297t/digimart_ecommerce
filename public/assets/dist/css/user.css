@@ -42,3 +42,17 @@ nav[role="navigation"] span:hover {
     background-color: black !important;
     color: white !important;
 }
+
+#shop_header {
+    background-image: url("../img/page-header.jpg") !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 800px) {
+    #shop_header {
+        background-image: url("../img/page-header.jpg") !important;
+        object-fit: cover;
+        object-position: center;
+    }
+}

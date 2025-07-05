@@ -7,9 +7,10 @@
     <main class="w-full mb-32 min-h-[100vh]">
 
         <div class="size-full page_top h-[40vh]">
-            <div class="bg-black/60 flex flex-col justify-center items-center  size-full">
-                <span class="font-satisfy text-white  text-2xl">explore</span>
-                <h1 class="text-6xl text-white font-bold">{{ $name }}</h1>
+            <div id="shop_header" class=" flex flex-col relative justify-center items-center  size-full">
+                <div class="size-full absolute top-0 left-0 bg-black/60"></div>
+                <span class="font-satisfy z-10 text-white  text-2xl">explore</span>
+                <h1 class="text-6xl text-white z-10 font-bold">{{ $name }}</h1>
             </div>
         </div>
         {{-- Filter --}}
