@@ -131,7 +131,7 @@
 
 </nav>
 
-<div class="w-full px-5 py-5 flex justify-around lg:hidden items-center bg-white  fixed bottom-0 left-0">
+<div class="w-full px-5 py-5 flex justify-around lg:hidden items-center bg-white z-50  fixed bottom-0 left-0">
     <a href ="{{ route('welcome') }}">
         <img src="{{ asset('assets/dist/img/icons/home.svg') }}" alt="" srcset="">
     </a>

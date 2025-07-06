@@ -12,7 +12,7 @@ class ProductsController extends Controller
     public function shop(Request $request)
     {
         $product = new Product();
-        $product  = Product::with('sub_category.category', 'product_image')->simplePaginate(20);
+        $product  = Product::with('sub_category.category', 'product_image')->paginate(20);
 
         return view('mainshop', ['product' => $product]);
     }

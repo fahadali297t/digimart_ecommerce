@@ -125,6 +125,23 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            {{-- Discounted Price --}}
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-group row mt-5">
+                                                    <label for="price" class=" col-md-12 col-form-label">Discount in
+                                                        PKR<span class="text-danger">*</span></label>
+                                                    <div class="col-md-12">
+                                                        <input type="number" value="{{ $product->discount_price }}"
+                                                            id="discount_price" class="form-control" name="discount_price"
+                                                            placeholder="Product Price">
+                                                        <span class="text-danger d-block mt-2">
+                                                            @error('discount_price')
+                                                                {{ $message }}
+                                                            @enderror
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                             {{-- Product Quantity --}}
                                             <div class="col-12 col-md-6">

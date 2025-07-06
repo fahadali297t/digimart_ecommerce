@@ -23,7 +23,6 @@
 
 nav[role="navigation"] a,
 nav[role="navigation"] span {
-    z-index: -100 !important;
     background-color: white !important;
     color: black !important;
     text-decoration: none !important;
@@ -55,4 +54,38 @@ nav[role="navigation"] span:hover {
         object-fit: cover;
         object-position: center;
     }
+}
+
+#product_card {
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    overflow: hidden !important;
+}
+#product_image {
+    transition: all 0.3s ease-in-out !important;
+}
+.product_action {
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    color: white !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    opacity: 0 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+#product_card:hover .product_action {
+    /* scale: 1.1 !important; */
+    opacity: 1 !important;
+}
+
+.product_image_container {
+    height: 500px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 0.3s ease-in-out !important;
 }

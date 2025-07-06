@@ -81,7 +81,7 @@ class ProductController extends Controller
             $product->slug = Str::slug($request->title);
             $product->description = $request->description;
             $product->price = $request->price;
-            $product->discount_price = null;
+            $product->discount_price = $request->discount_price;
             $product->quantity = $request->quantity;
             $product->sub_category_id = $request->sub_category;
             $product->created_at = now();
@@ -176,7 +176,8 @@ class ProductController extends Controller
             $product->slug = Str::slug($request->title);
             $product->description = $request->description;
             $product->price = $request->price;
-            $product->discount_price = null;
+            $product->discount_price = $request->discount_price
+            ;
             $product->quantity = $request->quantity;
             $product->sub_category_id = $request->sub_category;
             $product->updated_at = now();
@@ -258,7 +259,7 @@ class ProductController extends Controller
     // view All Products
     public function shop()
     {
-        $product  = Product::with('sub_category.category', 'product_image')->simplePaginate(20);
+        $product  = Product::with('sub_category.category', 'product_image')->get();
 
         return view('shop', ['product' => $product]);
     }
