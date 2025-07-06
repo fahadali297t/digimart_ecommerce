@@ -72,19 +72,19 @@ nav[role="navigation"] span:hover {
     height: 100% !important;
     background-color: rgba(0, 0, 0, 0.3) !important;
     color: white !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    opacity: 0 !important;
     transition: all 0.3s ease-in-out !important;
 }
 #product_card:hover .product_action {
     /* scale: 1.1 !important; */
-    opacity: 1 !important;
+    /* opacity: 1 !important; */
+    display: block !important;
+}
+#product_card:hover .p_title {
+    text-decoration: underline !important;
 }
 
 .product_image_container {
-    height: 500px !important;
+    /* height: 500px !important; */
     background-size: cover !important;
     background-position: center !important;
     transition: all 0.3s ease-in-out !important;

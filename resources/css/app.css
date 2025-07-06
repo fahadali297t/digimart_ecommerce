@@ -5,3 +5,12 @@
 .navlink {
     @apply w-20 text-center hover:cursor-pointer font-normal  hover:border-b-4 hover:border-black py-5 border-b-4 border-transparent;
 }
+
+.btn_primary {
+    @apply bg-white text-black px-4 py-2 rounded hover:bg-black hover:text-white transition duration-300 ease-in-out;
+}
+.btn_secondary {
+    @apply bg-gray-200 text-black px-4 py-2 rounded hover:bg-gray-300 transition duration-300 ease-in-out;
+}
+
+    
