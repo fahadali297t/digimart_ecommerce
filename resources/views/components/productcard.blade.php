@@ -1,8 +1,11 @@
-<div id="product_card" class="w-full h-[70vh] relative overflow-hidden flex-col flex justify-start items-center">
+<div id="product_card"
+    class="w-full h-[40vh] sm:h-[70vh] relative overflow-hidden flex-col flex justify-start items-center">
     @if ($pro->discount_price)
-        <div class="text-white z-10 bg-red-500 px-3 py-3  absolute top-3 right-5">
+        <div class="text-white z-10 bg-red-500 p-1 md:p-3  absolute top-3 right-5">
 
-            -{{ intval(100 - ($pro->discount_price / $pro->price) * 100) }}%
+            <p class="text-xs sm:text-base">
+                -{{ intval(100 - ($pro->discount_price / $pro->price) * 100) }}%
+            </p>
 
         </div>
     @endif
@@ -61,16 +64,16 @@
     <div class="mt-5 flex flex-col justify-center items-center">
         {{-- su_category --}}
         <a href="{{ route('shop', $pro->sub_category->name) }}"
-            class="text-sm  text-black/60">{{ $pro->sub_category->name }}</a>
+            class="text-xs sm:text-sm  text-black/60">{{ $pro->sub_category->name }}</a>
         {{-- Title --}}
         <a href="{{ route('product.view', $pro->slug) }}"
-            class="text-black p_title  text-base  xl:text-xl  font-semibold">{{ $pro->name }}</a>
+            class="text-black p_title  text-xs sm:text-base text-center   xl:text-xl  font-semibold">{{ $pro->name }}</a>
         {{-- rating --}}
         {{-- <x-review /> --}}
         {{-- Price --}}
         <div class="flex justify-center gap-1 items-center">
             @if ($pro->discount_price)
-                <p class="text-green-600  font-semibold">PKR. {{ $pro->discount_price }}</p>
+                <p class="text-green-600   font-semibold">PKR. {{ $pro->discount_price }}</p>
                 <p class="text-black/60 font-semibold line-through text-xs">{{ $pro->price }}</p>
             @else
                 <p class="text-black  font-semibold">PKR. {{ $pro->price }}</p>

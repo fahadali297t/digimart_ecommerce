@@ -10,7 +10,10 @@
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('assets/dist/css/user.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
 
 </head>
 
@@ -20,6 +23,8 @@
     {{-- js --}}
     <script src="{{ asset('assets/dist/js/custom.js') }}"></script>
     @yield('scripts');
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

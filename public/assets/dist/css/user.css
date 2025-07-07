@@ -89,3 +89,38 @@ nav[role="navigation"] span:hover {
     background-position: center !important;
     transition: all 0.3s ease-in-out !important;
 }
+
+/* ================= */
+
+#cat_home_img {
+    transition: all 0.3s ease-in-out !important;
+}
+
+#cat_home_anchor:hover #cat_home_img {
+    transform: scale(1.1) !important;
+}
+
+.three_cat_img1 {
+    background-image: url("../img/threecat3.webp");
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.three_cat_img2 {
+    background-image: url("../img/threecat4.webp");
+    background-size: cover !important;
+    background-position: center !important;
+}
+.three_cat_img3 {
+    background-image: url("../img/threecat5.webp");
+    background-size: cover !important;
+    background-position: center !important;
+}
+.three_cat_anchor {
+    position: relative !important;
+    transition: opacity 0.3s ease-in-out !important;
+}
+
+.three_cat_anchor:hover .three_cat_button {
+    opacity: 1 !important;
+}
