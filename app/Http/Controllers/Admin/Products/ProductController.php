@@ -26,13 +26,29 @@ class ProductController extends Controller
         $count  = Product::count();
         return view('Admin.pages.product.products', ['products' => $pro, 'count' => $count]);
     }
-    public function jsonlist()
+    public function filter(Request $request)
     {
-        // $pro = SubCategory::with('product')->get();
 
-        $pro = Product::with(['product_image', 'sub_category.category'])->simplePaginate(10);
-        $count  = Product::count();
-        return $pro;
+        $ids  = $request->ids;
+        if ($ids) {
+            // $pro = SubCategory::with('product')->get();
+
+            $pro = Product::whereHas('sub_category.category', function ($query) use ($ids) {
+                $query->whereIn('id', $ids);
+            })->with(['product_image', 'sub_category.category'])->get();
+
+            $pro = $pro->sortBy(function ($product) use ($ids) {
+                return array_search($product->sub_category->category->id, $ids);
+            })->values();
+            // $count  = Product::count();
+            $html = view('productHtml', ['product' => $pro])->render();
+            return response()->json(['html' => $html]);
+        } else {
+            $pro = Product::with(['product_image', 'sub_category.category'])->get();
+            // $count  = Product::count();
+            $html = view('productHtml', ['product' => $pro])->render();
+            return response()->json(['html' => $html]);
+        }
     }
 
     public function add()
@@ -176,8 +192,7 @@ class ProductController extends Controller
             $product->slug = Str::slug($request->title);
             $product->description = $request->description;
             $product->price = $request->price;
-            $product->discount_price = $request->discount_price
-            ;
+            $product->discount_price = $request->discount_price;
             $product->quantity = $request->quantity;
             $product->sub_category_id = $request->sub_category;
             $product->updated_at = now();

@@ -31,6 +31,8 @@ Route::get('/shop', [ProductsController::class, 'shop'])->name('shop');
 Route::get('/shop/category/{name}', [ProductController::class, 'shop_by_category'])->name('shop.category');
 Route::get('/shop/{name}', [ProductController::class, 'shop_by_subcategory'])->name('shop.subcategory');
 
+Route::post('/shopFilter', [ProductController::class, 'filter'])->name('filter');
+
 Route::get('/send', [MailController::class, 'send']);
 
 require __DIR__ . '/auth.php';
