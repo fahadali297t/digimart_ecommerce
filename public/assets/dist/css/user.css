@@ -124,3 +124,10 @@ nav[role="navigation"] span:hover {
 .three_cat_anchor:hover .three_cat_button {
     opacity: 1 !important;
 }
+
+.shop_top {
+    background-image: url("../img/page-header.jpg");
+    background-position: center !important;
+    background-size: cover !important;
+    height: 300px !important;
+}

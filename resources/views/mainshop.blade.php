@@ -5,7 +5,7 @@
 
 
     <main class="w-full mb-32 min-h-[100vh]">
-
+        <x-shopTop />
         <div class="container mx-auto">
             <div class=" grid grid-cols-12">
                 <div class="col-span-2 hidden lg:block">

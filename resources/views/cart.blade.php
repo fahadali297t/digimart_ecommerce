@@ -26,5 +26,3 @@
         @endforeach --}}
     </main>
 @endsection
-
-

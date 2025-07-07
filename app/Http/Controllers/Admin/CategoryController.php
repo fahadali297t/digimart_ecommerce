@@ -19,7 +19,7 @@ class CategoryController extends Controller
 
 
         $count = $category::count();
-
+        // return $categs;
         // return $categs;
         return view('Admin.pages.categories', ['categs' => $categs, 'count' => $count]);
     }

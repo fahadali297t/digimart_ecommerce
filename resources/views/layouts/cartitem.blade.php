@@ -120,4 +120,24 @@
         </div>
     </div>
 @else
+    <div class="col-span-12  h-[80vh] flex justify-center items-center">
+        <div class="text-center p-8 bg-white rounded-2xl shadow-lg max-w-sm w-full">
+            <div class="mb-6 flex justify-center items-center flex-col">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                </svg>
+            </div>
+            <h1 class="text-2xl font-semibold text-gray-800 mb-3">Your Cart is Empty</h1>
+            <p class="text-gray-500 mb-6">Looks like you haven’t added anything to your cart yet.</p>
+            <a href="/shop" class="px-6 py-3 bg-black border-2 border-black text-white rounded-lg mt-2 inline-block">
+                Continue Shopping
+            </a>
+        </div>
+    </div>
 @endif

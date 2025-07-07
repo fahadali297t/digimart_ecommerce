@@ -76,11 +76,21 @@
                                                         <span class="d-none">
                                                             @php
                                                                 $p = 0;
+                                                                $p_count = App\Models\Products\Product::whereHas(
+                                                                    'sub_category.category',
+                                                                    function ($query) use ($cat) {
+                                                                        $query->where('id', $cat->id);
+                                                                    },
+                                                                )->get();
+                                                                foreach ($p_count as $value) {
+                                                                    ++$p;
+                                                                }
+
                                                             @endphp
-                                                            @forelse ($cat->sub_category as $item)
+                                                            {{-- @forelse ($cat->sub_category as $item)
                                                                 {{ $p += $item->product_count }}
                                                             @empty
-                                                            @endforelse
+                                                            @endforelse --}}
                                                         </span>
                                                         {{ $p }}
                                                     </td>
