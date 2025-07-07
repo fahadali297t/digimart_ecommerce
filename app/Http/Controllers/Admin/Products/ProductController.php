@@ -26,30 +26,7 @@ class ProductController extends Controller
         $count  = Product::count();
         return view('Admin.pages.product.products', ['products' => $pro, 'count' => $count]);
     }
-    public function filter(Request $request)
-    {
 
-        $ids  = $request->ids;
-        if ($ids) {
-            // $pro = SubCategory::with('product')->get();
-
-            $pro = Product::whereHas('sub_category.category', function ($query) use ($ids) {
-                $query->whereIn('id', $ids);
-            })->with(['product_image', 'sub_category.category'])->get();
-
-            $pro = $pro->sortBy(function ($product) use ($ids) {
-                return array_search($product->sub_category->category->id, $ids);
-            })->values();
-            // $count  = Product::count();
-            $html = view('productHtml', ['product' => $pro])->render();
-            return response()->json(['html' => $html]);
-        } else {
-            $pro = Product::with(['product_image', 'sub_category.category'])->get();
-            // $count  = Product::count();
-            $html = view('productHtml', ['product' => $pro])->render();
-            return response()->json(['html' => $html]);
-        }
-    }
 
     public function add()
     {
