@@ -160,9 +160,11 @@ document.querySelectorAll('input[name="paymentMethod"]').forEach((elem) => {
     elem.addEventListener("change", function (event) {
         // console.log(`Selected: ${event.target.value}`);
         if (event.target.value === "card") {
+            document.getElementById("card_div").classList.remove("hidden");
             document.getElementById("card_label").classList.add("selected");
             document.getElementById("cod_label").classList.remove("selected");
         } else {
+            document.getElementById("card_div").classList.add("hidden");
             document.getElementById("cod_label").classList.add("selected");
             document.getElementById("card_label").classList.remove("selected");
         }
@@ -192,5 +194,3 @@ function updateOrder(id, val) {
         })
         .catch((error) => console.error("Error:", error));
 }
-
-

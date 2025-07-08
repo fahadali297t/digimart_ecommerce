@@ -6,7 +6,9 @@
 @section('content')
     @include('layouts.userNav')
 
-    <form action="{{ route('order.pay') }}" method="POST" class="space-y-6">
+    <form action="{{ route('order.pay') }}" id="checkout_form" method="POST" class="space-y-6">
+
+        <input type="hidden" name="stripe_token" value="" id="stripeToken">
         @csrf
         <div class="container mx-auto px-0 md:px-4 py-12">
             <h1 class="text-4xl font-bold text-center mb-10 text-gray-800">Checkout</h1>
@@ -75,7 +77,8 @@
                                         class="px-2 py-2 md:px-12 md:py-3 border-2 flex justify-center items-center gap-4 rounded-lg border-black ">
                                         Cash on delivery
                                     </label>
-                                    <input type="radio" name="paymentMethod" class="hidden" id="COD" value="cod">
+                                    <input type="radio" name="paymentMethod" class="hidden payment_method" id="COD"
+                                        value="cod">
 
                                 </div>
                                 <div>
@@ -83,7 +86,9 @@
                                         class="px-2 py-2 md:px-12 md:py-3 border-2 flex justify-center items-center gap-4 rounded-lg border-black ">
                                         Card payment
                                     </label>
-                                    <input type="radio" name="paymentMethod" class="hidden" id="card" value="card">
+
+                                    <input type="radio" name="paymentMethod" class="hidden payment_method" id="card"
+                                        value="card">
 
                                 </div>
 
@@ -96,7 +101,10 @@
                             <option value="paypal">PayPal</option>
                             <option value="cash">Cash on Delivery</option>
                         </select> --}}
-                            <div class="hidden" id="card-element"></div>
+                            <div id="card_div" class="hidden">
+                                <p class="text-black/80 text-sm my-3">Enter Card Details:</p>
+                                <div id="card-element"></div>
+                            </div>
                         </div>
 
                         <div>
@@ -160,7 +168,7 @@
                     @endif
 
                     <div class="w-full flex justify-center items-center ">
-                        <button type="submit"
+                        <button id="checkout_btn" type="submit"
                             class="w-full mt-6 bg-black hover:bg-white text-white border-2 hover:border-black hover:text-black font-semibold py-3 rounded-lg transition">
                             Proceed to Payment
                         </button>
@@ -182,6 +190,36 @@
         var elements = stripe.elements();
         var cardElement = elements.create('card');
         cardElement.mount('#card-element');
+
+        document.querySelectorAll('.payment_method').forEach(element => {
+            element.addEventListener('change', (e) => {
+                if (e.target.value === 'card') {
+                    document.querySelector('#checkout_btn').type = 'button';
+                } else {
+                    document.querySelector('#checkout_btn').type = 'submit';
+                }
+            });
+        });
+
+
+        document.querySelector('#checkout_btn').addEventListener('click', function(e) {
+            let selectedMethod = document.querySelector('input[name="paymentMethod"]:checked');
+
+            if (selectedMethod && selectedMethod.value === 'card') {
+                e.preventDefault();
+                token();
+            }
+        });
+
+        function token() {
+            stripe.createToken(cardElement).then(function(result) {
+                if (result.token) {
+                    document.querySelector('#stripeToken').value = result.token.id;
+                    document.querySelector('#checkout_form').submit();
+                }
+            });
+
+        }
     </script>
     <script src="https://kit.fontawesome.com/0e26b3244d.js" crossorigin="anonymous"></script>
 @endsection
