@@ -5,15 +5,11 @@
 
 
     <main class="w-full mb-32 min-h-[100vh]">
-
+        <x-shopTop :name=$name />
         <div class="container mx-auto">
+
             <div class=" grid grid-cols-12">
-                <div class="col-span-2 hidden lg:block">
-                    <div class="mt-10 px-5 py-5 mx-auto">
-                        <h1>Filter</h1>
-                    </div>
-                </div>
-                <div class="col-span-12 lg:col-span-10">
+                <div class="col-span-12 ">
                     <div class=" mt-10 px-5 py-5 mx-auto ">
                         <div class="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5 lg:grid-cols-4">
                             {{-- products --}}

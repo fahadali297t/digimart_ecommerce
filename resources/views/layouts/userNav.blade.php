@@ -2,8 +2,8 @@
     $categories = App\Models\Category::with('sub_category')->paginate(6);
 @endphp
 
-<nav class="w-full mt-5 lg:mt-0 px-5 z-50 sticky bg-white top-0 left-0  flex justify-between items-center">
-    <div class="flex justify-between items-center gap-10">
+<nav class="w-full  lg:mt-0 px-5 z-50 sticky bg-white top-0 left-0  flex justify-between items-center">
+    <div class="flex  justify-between items-center gap-10">
         <h3 class="text-2xl font-semibold ">Chawkbazar</h3>
         <div class=" hidden lg:flex justify-center items-center  gap-10">
             <a href="{{ route('welcome') }}" class=" navlink">Home</a>
@@ -50,7 +50,7 @@
 
     </div>
 
-    <div class=" hidden lg:flex justify-center items-center  gap-10">
+    <div class=" hidden  lg:flex justify-center items-center  gap-10">
         <a href="" class=" hover:cursor-pointer font-normal ">
             <img src="{{ asset('assets/dist/img/icons/search.svg') }}" alt="" srcset="">
         </a>
@@ -72,7 +72,7 @@
 
 
     </div>
-    <div class="block lg:hidden">
+    <div class="block lg:hidden mt-5">
         <button type="button" class="" onclick="toggleMenu();">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -86,7 +86,8 @@
     </div>
 
 </nav>
-{{-- for Mobile --}}
+
+{{-- for Mobile menu  --}}
 <nav id="mobile_nav"
     class="w-full  hidden h-[100vh] fixed top-0 left-0 bg-white px-5 py-6 flex lg:hidden  justify-center flex-col items-start z-50">
     <div class="w-full flex justify-between items-center">
@@ -131,6 +132,8 @@
 
 </nav>
 
+
+{{-- bottom nav --}}
 <div class="w-full px-5 py-5 flex justify-around lg:hidden items-center bg-white z-50  fixed bottom-0 left-0">
     <a href ="{{ route('welcome') }}">
         <img src="{{ asset('assets/dist/img/icons/home.svg') }}" alt="" srcset="">
