@@ -12,7 +12,7 @@ class OrderController extends Controller
     {
         $order = new Order();
 
-        $orders =  $order->with('order_item.products')->get();
+        $orders =  $order->with('order_item.products')->orderBy('id', 'desc')->get();
         return view('Admin.pages.orders', ['orders' => $orders]);
     }
     public function update($id)
