@@ -14,7 +14,7 @@
                         <div class="col">
                             <!-- Page pre-title -->
                             <div class="page-pretitle">
-                                DigiMart
+                                Chawkbazar
                             </div>
 
                         </div>
