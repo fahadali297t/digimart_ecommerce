@@ -80,12 +80,11 @@
                     <input type="hidden" name="pid[]" value="{{ $id }}">
                 @endforeach
                 <button type="submit"
-                    class="flex items-center justify-center px-6 py-3 text-white bg-black hover:bg-gray-800 rounded-lg text-lg transition">
+                    class="flex items-center justify-center px-6 py-3 text-white bg-black hover:bg-gray-800 rounded-lg text-lg transition uppercase">
                     Add All to cart
                 </button>
             </form>
 
-            <h1 class="text-3xl text-black font-semibold">Add All Items To cart</h1>
 
         </div>
     </div>
