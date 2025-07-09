@@ -11,13 +11,16 @@
             <div class="min-w-full min-h-full  bg-black/60 absolute top-0 left-0">
             </div>
             <div class="size-full flex-col flex justify-center items-center gap-5 absolute">
-                <h1 class="text-center text-3xl font-semibold  text-white">Lorem, ipsum dolor.</h1>
+                <h1 class="text-center text-3xl font-semibold  text-white">Elevate Your Everyday Style.</h1>
                 <div class="h-0 border-2 border-white w-32 ">
 
                 </div>
-                <p class="text-white text-sm text-center uppercase ">Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. <br> Deserunt doloribus esse rem quis
-                    temporibus aliquid sit numquam rerum facere distinctio!
+                <p class="text-white text-sm text-center uppercase ">Shop our collection of chic handbags and accessories
+                    made to complement every moment.
+
+
+
+
                 </p>
                 <a class="px-10 py-3 border-2 text-white border-white hover:bg-black hover:border-black transition-all ease-in duration-200"
                     href="{{ route('shop') }}">Shop Now</a>
@@ -222,7 +225,7 @@
         </section>
 
     </main>
-    
+
 
     <!-- Font Awesome for icons (add in your <head>) -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
