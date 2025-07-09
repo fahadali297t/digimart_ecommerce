@@ -63,22 +63,44 @@
                             </button>
                         </form>
 
-                        <button
-                            class="flex items-center justify-center px-5 py-3 border-2 border-black text-black hover:bg-black hover:text-white rounded-lg transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="22" height="22"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M19.5 12.572l-7.5 7.428-7.5-7.428a5 5 0 117.5-6.566 5 5 0 117.5 6.566z" />
-                            </svg>
-                            Wishlist
-                        </button>
+                        <form action="{{ route('addwish') }}" method="POST" class="w-full sm:w-auto flex">
+                            @csrf
+                            <input type="hidden" name="pid" value="{{ $product->id }}">
+                            <button type="submit"
+                                class="flex items-center justify-center px-6 py-3 text-white bg-black hover:bg-gray-800 rounded-lg text-lg transition">
+                                Add to wish
+                            </button>
+                        </form>
 
                     </div>
                 </div>
 
+
             </div>
         </div>
+        <div class="container mx-auto">
+            <div class="flex items-center w-full">
+                <div class="flex-grow border-t-2 border-black"></div>
+                <span class="px-4 font-bold text-black uppercase text-lg">Related Products</span>
+                <div class="flex-grow border-t-2 border-black"></div>
+            </div>
 
+            <div>
+                @php
+                    $id = $product->sub_category->id;
+                    $products = App\Models\Products\Product::with('sub_category.category', 'product_image')
+                        ->whereHas('sub_category', function ($query) use ($id) {
+                            $query->where('id', $id);
+                        })
+                        ->paginate(4);
+                @endphp
+                <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    @foreach ($products as $pro)
+                        <x-productcard :pro=$pro />
+                    @endforeach
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="//unpkg.com/alpinejs" defer></script>

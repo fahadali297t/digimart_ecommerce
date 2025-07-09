@@ -20,20 +20,22 @@
 <body>
     @yield('content')
 
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-black text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
 
             <!-- Shop Section -->
             <div>
                 <h2 class="text-lg font-semibold mb-4">SHOP</h2>
                 <ul class="space-y-2 text-gray-300">
-                    <li><a href="#" class="hover:text-white">New In</a></li>
-                    <li><a href="#" class="hover:text-white">Women</a></li>
-                    <li><a href="#" class="hover:text-white">Men</a></li>
-                    <li><a href="#" class="hover:text-white">Shoes</a></li>
-                    <li><a href="#" class="hover:text-white">Bags & Accessories</a></li>
-                    <li><a href="#" class="hover:text-white">Top Brands</a></li>
-                    <li><a href="#" class="hover:text-white">Sale & Special Offers</a></li>
+                    @php
+                        $categories = App\Models\Category::paginate(5);
+                    @endphp
+                    @forelse ($categories as $item)
+                        <li><a href="{{ route('shop.category', $item->name) }}"
+                                class="hover:text-white">{{ $item->name }}</a></li>
+
+                    @empty
+                    @endforelse
                 </ul>
             </div>
 
@@ -69,41 +71,13 @@
                         class="w-full p-2 rounded-l bg-gray-800 text-gray-300 focus:outline-none">
                     <button type="submit" class="bg-white text-gray-900 px-4 rounded-r font-semibold">SUBMIT</button>
                 </form>
-                <div class="flex space-x-3">
-                    <a href="#"
-                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-white hover:text-gray-900 transition">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-white hover:text-gray-900 transition">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-white hover:text-gray-900 transition">
-                        <i class="fab fa-pinterest-p"></i>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-white hover:text-gray-900 transition">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="#"
-                        class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-white hover:text-gray-900 transition">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </div>
+
             </div>
         </div>
 
         <!-- Bottom Bar -->
         <div class="border-t border-gray-800 mt-8 pt-6 text-gray-500 text-sm text-center">
-            <p>&copy; 2024, Ella Demo. All Rights Reserved. Themes By Halothemes</p>
-            <div class="flex justify-center space-x-3 mt-4">
-                <img src="visa.png" alt="Visa" class="h-6">
-                <img src="mastercard.png" alt="MasterCard" class="h-6">
-                <img src="paypal.png" alt="Paypal" class="h-6">
-                <img src="applepay.png" alt="Apple Pay" class="h-6">
-                <img src="bitcoin.png" alt="Bitcoin" class="h-6">
-            </div>
+            <p>&copy; 2025, ChawkBazar. All Rights Reserved. </p>
         </div>
     </footer>
     {{-- js --}}

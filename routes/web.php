@@ -23,8 +23,17 @@ Route::middleware('auth')->group(function () {
 Route::get('/product/{slug}', [ProductController::class, 'singleProduct'])->name('product.view');
 
 Route::get('/products', [ProductController::class, 'jsonlist']);
+// for cart
 Route::get('/cart', [ProductController::class, 'cart'])->name('cart');
 Route::post('/addTocart', [ProductController::class, 'addCart'])->name('addcart');
+// for WishList
+Route::get('/wishList', [ProductsController::class, 'wishlist'])->name('wishlist');
+Route::post('/addTowish', [ProductsController::class, 'addwish'])->name('addwish');
+Route::post('/delete-wish-item', [ProductsController::class, 'deleteItem'])->name('wish.update');
+Route::post('/multi-add-cart', [ProductsController::class, 'multiCart'])->name('multiCart');
+
+
+
 Route::post('/update-cart', [ProductController::class, 'updateCart'])->name('cart.update');
 Route::post('/delete-item', [ProductController::class, 'deleteItem'])->name('cart.update');
 Route::get('/shop', [ProductsController::class, 'shop'])->name('shop');

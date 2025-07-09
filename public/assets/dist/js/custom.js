@@ -74,6 +74,25 @@ function remove(event, id) {
         })
         .catch((error) => console.error("Error:", error));
 }
+function removeWish(event, id) {
+    fetch("/delete-wish-item", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "X-CSRF-TOKEN": csrfToken,
+        },
+        body: JSON.stringify({
+            id: id,
+        }),
+    })
+        .then((res) => res)
+        .then((data) => {
+            // Update quantity in counter span
+            // console.log(data);
+            location.href = "wishList";
+        })
+        .catch((error) => console.error("Error:", error));
+}
 // for increment
 function inc(event, id, inc) {
     let total = document.getElementById("total_" + id);
