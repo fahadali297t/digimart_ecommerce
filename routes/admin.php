@@ -11,10 +11,6 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('guest:admin')
     ->prefix('admin')->as('admin.')
     ->group(function () {
-        Route::get('register', [RegisteredUserController::class, 'create'])
-            ->name('register');
-
-        Route::post('register', [RegisteredUserController::class, 'store']);
 
         Route::get('login', [AuthenticatedSessionController::class, 'create'])
             ->name('login');
@@ -28,6 +24,17 @@ Route::middleware('auth:admin')
         Route::get('/dashboard', function () {
             return view('Admin.dashboard');
         })->name('dashboard');
+
+
+        // for registering
+        Route::get('register', [RegisteredUserController::class, 'create'])
+            ->name('register');
+
+        Route::post('register', [RegisteredUserController::class, 'store']);
+
+        Route::get('users', [RegisteredUserController::class, 'users_list'])->name('users.list');
+        Route::get('admins', [RegisteredUserController::class, 'admins_list'])->name('admins.list');
+        Route::post('admins/remove', [RegisteredUserController::class, 'admins_remove'])->name('admins.remove');
 
         // routes for categories
         Route::get('/categories', [CategoryController::class, 'list'])->name('category.list');

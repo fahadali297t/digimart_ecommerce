@@ -72,7 +72,7 @@
                 </div>
 
 
-                <div class="grid mt-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                <div class="grid mt-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                     @php
                         // $categories = ['Men', 'Women', 'Kids'];
                         $Men_products = App\Models\Products\Product::whereHas('sub_category.category', function (
@@ -154,7 +154,7 @@
                 </div>
 
 
-                <div class="grid mt-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                <div class="grid mt-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
                     @php
                         $Men_products = App\Models\Products\Product::where('discount_price', '>', 1)->simplePaginate(8);
 

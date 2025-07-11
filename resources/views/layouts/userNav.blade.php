@@ -4,7 +4,7 @@
 
 <nav class="w-full  lg:mt-0 px-5 z-50 sticky bg-white top-0 left-0  flex justify-between items-center">
     <div class="flex  justify-between items-center gap-10">
-        <h3 class="text-2xl font-semibold ">Chawkbazar</h3>
+        <a href="/" class="text-2xl font-semibold ">Chawkbazar</a>
         <div class=" hidden lg:flex justify-center items-center  gap-10">
             <a href="{{ route('welcome') }}" class=" navlink">Home</a>
             <div href="" id="categoryNav"
@@ -110,7 +110,7 @@
 <nav id="mobile_nav"
     class="w-full  hidden h-[100vh] fixed top-0 left-0 bg-white px-5 py-6 flex lg:hidden  justify-center flex-col items-start z-50">
     <div class="w-full flex justify-between items-center">
-        <h3 class="text-2xl text-start font-semibold  w-full ">Chawkbazar</h3>
+        <a href="/" class="text-2xl text-start font-semibold  w-full ">Chawkbazar</a>
         <button type="button" onclick="toggleMenu();">
             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"

@@ -191,12 +191,13 @@
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                    <a href="#" class="dropdown-item">Status</a>
-                    <a href="./profile.html" class="dropdown-item">Profile</a>
-                    <a href="#" class="dropdown-item">Feedback</a>
-                    <div class="dropdown-divider"></div>
-                    <a href="./settings.html" class="dropdown-item">Settings</a>
-                    <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                    <form method="POST" action="{{ route('admin.logout') }}">
+                        @csrf
+                        <a class="dropdown-item" href="route('admin.logout')"
+                            onclick="event.preventDefault();
+                              this.closest('form').submit();">Logout</a>
+
+                    </form>
                 </div>
             </div>
         </div>
@@ -341,81 +342,48 @@
                         </div>
                 </li>
 
-
-
-                {{-- Dummy sidebar link --}}
+                {{-- users Managment --}}
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown"
                         data-bs-auto-close="false" role="button" aria-expanded="false">
                         <span
                             class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-category">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
-                                <path d="M12 12l8 -4.5" />
-                                <path d="M12 12l0 9" />
-                                <path d="M12 12l-8 -4.5" />
-                                <path d="M16 5.25l-8 4.5" />
+                                <path d="M4 4h6v6h-6z" />
+                                <path d="M14 4h6v6h-6z" />
+                                <path d="M4 14h6v6h-6z" />
+                                <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                             </svg>
                         </span>
                         <span class="nav-link-title">
-                            Interface
+                            User Managment
                         </span>
                     </a>
                     <div class="dropdown-menu">
                         <div class="dropdown-menu-columns">
                             <div class="dropdown-menu-column">
-                                <a class="dropdown-item" href="./alerts.html">
-                                    Alerts
+                                <a class="dropdown-item" href="{{ route('admin.users.list') }}">
+                                    All Users
                                 </a>
-                                <a class="dropdown-item" href="./accordion.html">
-                                    Accordion
+                                <a class="dropdown-item" href="{{ route('admin.admins.list') }}">
+                                    All Admins
                                 </a>
-                                <div class="dropend">
-                                    <a class="dropdown-item dropdown-toggle" href="#sidebar-authentication"
-                                        data-bs-toggle="dropdown" data-bs-auto-close="false" role="button"
-                                        aria-expanded="false">
-                                        Authentication
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <a href="./sign-in.html" class="dropdown-item">
-                                            Sign in
-                                        </a>
-                                        <a href="./sign-in-link.html" class="dropdown-item">
-                                            Sign in link
-                                        </a>
-                                        <a href="./sign-in-illustration.html" class="dropdown-item">
-                                            Sign in with illustration
-                                        </a>
-                                        <a href="./sign-in-cover.html" class="dropdown-item">
-                                            Sign in with cover
-                                        </a>
-                                        <a href="./sign-up.html" class="dropdown-item">
-                                            Sign up
-                                        </a>
-                                        <a href="./forgot-password.html" class="dropdown-item">
-                                            Forgot password
-                                        </a>
-                                        <a href="./terms-of-service.html" class="dropdown-item">
-                                            Terms of service
-                                        </a>
-                                        <a href="./auth-lock.html" class="dropdown-item">
-                                            Lock screen
-                                        </a>
-                                        <a href="./2-step-verification.html" class="dropdown-item">
-                                            2 step verification
-                                        </a>
-                                        <a href="./2-step-verification-code.html" class="dropdown-item">
-                                            2 step verification code
-                                        </a>
-                                    </div>
-                                </div>
+                                <a class="dropdown-item" href="{{ route('admin.register') }}">
+                                    Add Admin
+                                </a>
+
 
                             </div>
                         </div>
                 </li>
+
+
+
+
 
             </ul>
         </div>

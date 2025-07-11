@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Models\Admin;
+use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -41,10 +42,32 @@ class RegisteredUserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        event(new Registered($admin));
+        // event(new Registered($admin));
 
-        Auth::guard('admin')->login($admin);
+        // Auth::guard('admin')->login($admin);
 
         return redirect(route('admin.dashboard', absolute: false));
+    }
+
+
+    public function users_list()
+    {
+        $users  = User::get();
+        // return $users;
+        return view('Admin.pages.all_users', ['users' => $users]);
+    }
+    public function admins_list()
+    {
+        $admins  = Admin::get();
+        // return $users;
+        return view('Admin.pages.all_admins', ['admins' => $admins]);
+    }
+    public function admins_remove(Request $request)
+    {
+        
+        $admin = Admin::find($request->id);
+        $admin->delete();
+
+        return redirect()->route('admin.admins.list');
     }
 }
