@@ -4,24 +4,24 @@
     @include('layouts.userNav')
 
 
-    <main class="w-full mb-32 min-h-[100vh]">
-
-        {{-- cart page --}}
-        <div class="container mx-auto mt-10 px-5 md:px-0 ">
-
-            <div class="grid max-h-[70vh] gap-10  grid-cols-12" id="cartItem">
-
+    <body class="bg-gray-50 text-gray-800">
+        <main class="w-full min-h-[100vh] pt-10 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto space-y-10">
+                <h2 class="text-3xl font-bold">Your Shopping Cart</h2>
                 @includeIf('layouts.cartitem', ['product' => $product])
+
+
             </div>
+        </main>
+    </body>
 
 
 
+    {{-- cart page --}}
 
 
-        </div>
-
-        {{-- ================ --}}
-        {{-- @foreach ($product as $key => $item)
+    {{-- ================ --}}
+    {{-- @foreach ($product as $key => $item)
             {{ $key }} => {{ $item->product->name }}
         @endforeach --}}
     </main>
