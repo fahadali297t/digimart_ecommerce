@@ -38,12 +38,9 @@ Configure mysql database Credientials according to yours.
 Also the Test keys for stripe also given.
 ```
 
-### 4. Install Breeze
+### 4. Migrate Tables
 
 ```bash
-composer require laravel/breeze --dev
-php artisan breeze:install
-npm install && npm run dev
 php artisan migrate
 ```
 
