@@ -18,6 +18,20 @@
 </head>
 
 <body>
+
+    <div id="box" class="box ">
+        <div class="loader">
+            <span style="--i: 1"></span>
+            <span style="--i: 2"></span>
+            <span style="--i: 3"></span>
+            <span style="--i: 4"></span>
+            <span style="--i: 5"></span>
+            <span style="--i: 6"></span>
+            <span style="--i: 7"></span>
+            <span style="--i: 8"></span>
+        </div>
+        <h3>Loading...</h3>
+    </div>
     @yield('content')
 
     <footer class="bg-black text-white py-12">
@@ -84,7 +98,11 @@
     <script src="{{ asset('assets/dist/js/custom.js') }}"></script>
     @yield('scripts');
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script>
+        window.onload = () => {
+            document.querySelector("#box").classList.add("select");
+        }
+    </script>
 </body>
 
 </html>
