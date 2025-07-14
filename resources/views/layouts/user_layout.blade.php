@@ -99,9 +99,10 @@
     @yield('scripts');
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        window.onload = () => {
+        window.addEventListener('load', () => {
             document.querySelector("#box").classList.add("select");
-        }
+
+        })
     </script>
 </body>
 
