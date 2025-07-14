@@ -21,14 +21,14 @@
 
     <div id="box" class="box ">
         <div class="loader">
-            <span style="--i: 1"></span>
-            <span style="--i: 2"></span>
-            <span style="--i: 3"></span>
-            <span style="--i: 4"></span>
-            <span style="--i: 5"></span>
-            <span style="--i: 6"></span>
-            <span style="--i: 7"></span>
-            <span style="--i: 8"></span>
+            <span class="span" style="--i: 1"></span>
+            <span class="span" style="--i: 2"></span>
+            <span class="span" style="--i: 3"></span>
+            <span class="span" style="--i: 4"></span>
+            <span class="span" style="--i: 5"></span>
+            <span class="span" style="--i: 6"></span>
+            <span class="span" style="--i: 7"></span>
+            <span class="span" style="--i: 8"></span>
         </div>
         <h3>Loading...</h3>
     </div>

@@ -197,7 +197,7 @@ h3 {
     color: #101a36 !important;
 }
 
-span {
+.span {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
@@ -206,7 +206,7 @@ span {
     transform: rotate(calc(45deg * var(--i))) !important;
 }
 
-span:before {
+.span:before {
     content: "" !important;
     position: absolute !important;
     top: 0 !important;
@@ -217,7 +217,7 @@ span:before {
     background-color: #74baff72 !important;
 }
 
-span:nth-child(even):before {
+.span:nth-child(even):before {
     background: #2980b9;
     animation: circle 1s linear infinite;
     transform-origin: 60px;
