@@ -4,61 +4,39 @@
     @include('layouts.userNav')
 
     <style>
-        .loader {
+        .h1 {
+            /* font-size: 40px; */
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            color: white;
             position: relative;
-            width: 120px;
-            height: 120px;
         }
 
-        h3 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 18px;
-            color: #101a36;
-        }
-
-        .span1 {
+        .h1:before {
+            content: "loading..";
             position: absolute;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            transform: rotate(calc(45deg * var(--i)));
+
+            color: black;
+            overflow: hidden;
+            border-right: 4px solid black;
+            animation: animate 5s linear infinite;
         }
 
-        .span1:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background-color: #74baff72;
-        }
-
-        .span1:nth-child(even):before {
-            background: #2980b9;
-            animation: circle 1s linear infinite;
-            transform-origin: 60px;
-        }
-
-        @keyframes circle {
-
-            0%,
-            25% {
-                transform: rotate(0deg) scale(1);
+        @keyframes animate {
+            0% {
+                width: 0;
             }
 
             50% {
-                transform: rotate(90deg) scale(1.3);
+                width: 100%;
             }
 
-            75%,
             100% {
-                transform: rotate(180deg) scale(1);
+                width: 0;
             }
         }
     </style>
@@ -79,21 +57,9 @@
                     <div class="col-span-12 lg:col-span-10">
                         <div class=" mt-10 px-5 py-5 mx-auto ">
                             <div id="shop_content" class="grid grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-5 xl:grid-cols-4">
+                                <div class="col-span-4  flex justify-center items-center mt-10">
+                                    <h1 class="h1 text-sm md:text-3xl  font-semibold text-center w-fit  ">loading..</h1>
 
-                                <div class="w-full col-span-4 h-full flex justify-center items-center ">
-
-                                    <div class="box1 mt-10">
-                                        <div class="loader">
-                                            <span class="span1" style="--i: 1"></span>
-                                            <span class="span1" style="--i: 2"></span>
-                                            <span class="span1" style="--i: 3"></span>
-                                            <span class="span1" style="--i: 4"></span>
-                                            <span class="span1" style="--i: 5"></span>
-                                            <span class="span1" style="--i: 6"></span>
-                                            <span class="span1" style="--i: 7"></span>
-                                            <span class="span1" style="--i: 8"></span>
-                                        </div>
-                                    </div>
                                 </div>
 
                             </div>
@@ -111,10 +77,19 @@
 
 @section('scripts')
     <script>
-        window.addEventListener('load', () => {
-            fetchData('');
+        document.addEventListener('DOMContentLoaded', () => {
+            setCache();
+            console.log('cashe set ');
 
-        })
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchData('');
+            console.log('Data fetch set ');
+
+        });
+
+
+
         let checks = document.querySelectorAll(".check");
         let values = [];
         // logic to load products when checked by categories
@@ -138,23 +113,24 @@
             });
         });
 
+        const setCache = () => {
+            fetch("/setCashe", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+
+            })
+
+        }
 
         function fetchData(values) {
-            document.getElementById('shop_content').innerHTML = ` <div class="w-full col-span-4 h-full flex justify-center items-center ">
 
-                                    <div class="box1 mt-10">
-                                        <div class="loader">
-                                            <span class="span1" style="--i: 1"></span>
-                                            <span class="span1" style="--i: 2"></span>
-                                            <span class="span1" style="--i: 3"></span>
-                                            <span class="span1" style="--i: 4"></span>
-                                            <span class="span1" style="--i: 5"></span>
-                                            <span class="span1" style="--i: 6"></span>
-                                            <span class="span1" style="--i: 7"></span>
-                                            <span class="span1" style="--i: 8"></span>
-                                        </div>
-                                    </div>
-                                </div>`
+            document.getElementById('shop_content').innerHTML = `  <div class="col-span-4  flex justify-center items-center mt-10">
+                                    <h1 class="h1 text-sm md:text-3xl  font-semibold text-center w-fit  ">loading..</h1>
+
+                                </div>`;
+
             fetch("/shopFilter", {
                     method: "POST",
                     headers: {
@@ -189,21 +165,12 @@
                     document.getElementById('priceUp').classList.add('active');
                     document.getElementById('priceDown').classList.remove('active');
                 }
-                document.getElementById('shop_content').innerHTML = ` <div class="w-full col-span-4 h-full flex justify-center items-center ">
+                document.getElementById('shop_content').innerHTML = `  <div class="col-span-4  flex justify-center items-center mt-10">
+                                    <h1 class="h1 text-sm md:text-3xl  font-semibold text-center w-fit  ">loading..</h1>
 
-                                    <div class="box1 mt-10">
-                                        <div class="loader">
-                                            <span class="span1" style="--i: 1"></span>
-                                            <span class="span1" style="--i: 2"></span>
-                                            <span class="span1" style="--i: 3"></span>
-                                            <span class="span1" style="--i: 4"></span>
-                                            <span class="span1" style="--i: 5"></span>
-                                            <span class="span1" style="--i: 6"></span>
-                                            <span class="span1" style="--i: 7"></span>
-                                            <span class="span1" style="--i: 8"></span>
-                                        </div>
-                                    </div>
-                                </div>`
+                                </div>
+`;
+
                 fetch("/shopFilter", {
                         method: "POST",
                         headers: {

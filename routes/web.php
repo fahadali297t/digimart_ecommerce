@@ -40,6 +40,7 @@ Route::get('/shop', [ProductsController::class, 'shop'])->name('shop');
 Route::get('/shop/category/{name}', [ProductController::class, 'shop_by_category'])->name('shop.category');
 Route::get('/shop/{name}', [ProductController::class, 'shop_by_subcategory'])->name('shop.subcategory');
 
+Route::get('/setCashe', [ProductsController::class, 'setCache'])->name('cache.set');
 Route::post('/shopFilter', [ProductsController::class, 'filter'])->name('filter');
 
 Route::get('/send', [MailController::class, 'send']);
